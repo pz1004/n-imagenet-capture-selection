@@ -1,0 +1,321 @@
+{
+  "analysis": "exploratory; 30,000 events; square is a training-condition contextual reference",
+  "calibration_n": 9000,
+  "heldout_n": 36000,
+  "classes": 900,
+  "calibration_discordant_outcome": "vertical-only correctness; predictor MSP_V minus MSP_H",
+  "fit": "standardized signed difference; summed logistic loss + 0.5 * slope^2; unpenalized intercept; predicted p>=0.5 selects vertical",
+  "test_order_sha256": "4fcbd907e0a6239ed0432922a9f4136cc44fc5228680ebcecdebabb6b8816f15",
+  "bootstrap": {
+    "replicates": 2000,
+    "test_seed": 20261121,
+    "calibration_seed": 20261122,
+    "method": "independent within-class source-pair calibration and test draws; select discordances and refit standardization and logistic coefficients in every calibration draw; paired percentile intervals"
+  },
+  "models": {
+    "histogram": {
+      "calibration_discordant": 2597,
+      "calibration_v_only": 1861,
+      "calibration_h_only": 736,
+      "fit_center": 0.12289320274184895,
+      "fit_scale": 0.3552678667709447,
+      "fit_intercept": 1.2107037092221287,
+      "fit_slope": 1.2829835879419862,
+      "switch_to_H_if_MSP_H_minus_MSP_V_exceeds": 0.2123598185044876,
+      "adjusted_horizontal_choices": 7024,
+      "accuracy": {
+        "vertical": {
+          "correct": 13350,
+          "fraction": 0.37083333333333335,
+          "ci95_fraction": [
+            0.3663326388888889,
+            0.37516666666666665
+          ]
+        },
+        "horizontal": {
+          "correct": 8611,
+          "fraction": 0.23919444444444443,
+          "ci95_fraction": [
+            0.23544444444444446,
+            0.24314027777777775
+          ]
+        },
+        "raw_msp": {
+          "correct": 13490,
+          "fraction": 0.37472222222222223,
+          "ci95_fraction": [
+            0.37019444444444444,
+            0.3791673611111111
+          ]
+        },
+        "adjusted": {
+          "correct": 13914,
+          "fraction": 0.3865,
+          "ci95_fraction": [
+            0.38202708333333335,
+            0.39130625
+          ]
+        },
+        "square": {
+          "correct": 16864,
+          "fraction": 0.46844444444444444,
+          "ci95_fraction": [
+            0.4639159722222222,
+            0.47294444444444445
+          ]
+        },
+        "oracle": {
+          "correct": 16299,
+          "fraction": 0.45275,
+          "ci95_fraction": [
+            0.4480548611111111,
+            0.45725069444444444
+          ]
+        },
+        "fusion": {
+          "correct": 13667,
+          "fraction": 0.3796388888888889,
+          "ci95_fraction": [
+            0.37536041666666664,
+            0.3841118055555556
+          ]
+        }
+      },
+      "paired_contrasts": {
+        "raw_msp_minus_vertical": {
+          "gain_count": 2015,
+          "loss_count": 1875,
+          "net_count": 140,
+          "delta_pp": 0.3888888888888889,
+          "ci95_pp": [
+            0.06666666666666667,
+            0.7111111111111111
+          ]
+        },
+        "adjusted_minus_vertical": {
+          "gain_count": 1274,
+          "loss_count": 710,
+          "net_count": 564,
+          "delta_pp": 1.5666666666666667,
+          "ci95_pp": [
+            1.3360416666666666,
+            1.8167361111111107
+          ]
+        },
+        "adjusted_minus_raw_msp": {
+          "gain_count": 1165,
+          "loss_count": 741,
+          "net_count": 424,
+          "delta_pp": 1.1777777777777778,
+          "ci95_pp": [
+            0.9527777777777777,
+            1.4277777777777778
+          ]
+        },
+        "square_minus_vertical": {
+          "gain_count": 6949,
+          "loss_count": 3435,
+          "net_count": 3514,
+          "delta_pp": 9.761111111111111,
+          "ci95_pp": [
+            9.272152777777778,
+            10.247291666666666
+          ]
+        },
+        "square_minus_raw_msp": {
+          "gain_count": 6819,
+          "loss_count": 3445,
+          "net_count": 3374,
+          "delta_pp": 9.372222222222222,
+          "ci95_pp": [
+            8.869305555555554,
+            9.863958333333333
+          ]
+        },
+        "square_minus_adjusted": {
+          "gain_count": 6578,
+          "loss_count": 3628,
+          "net_count": 2950,
+          "delta_pp": 8.194444444444445,
+          "ci95_pp": [
+            7.7,
+            8.661180555555555
+          ]
+        },
+        "square_minus_oracle": {
+          "gain_count": 5352,
+          "loss_count": 4787,
+          "net_count": 565,
+          "delta_pp": 1.5694444444444444,
+          "ci95_pp": [
+            1.0665972222222222,
+            2.047222222222222
+          ]
+        },
+        "fusion_minus_raw_msp": {
+          "gain_count": 404,
+          "loss_count": 227,
+          "net_count": 177,
+          "delta_pp": 0.49166666666666664,
+          "ci95_pp": [
+            0.35555555555555557,
+            0.6361111111111111
+          ]
+        },
+        "adjusted_minus_fusion": {
+          "gain_count": 1171,
+          "loss_count": 924,
+          "net_count": 247,
+          "delta_pp": 0.6861111111111111,
+          "ci95_pp": [
+            0.43333333333333335,
+            0.9527777777777777
+          ]
+        },
+        "square_minus_fusion": {
+          "gain_count": 6705,
+          "loss_count": 3508,
+          "net_count": 3197,
+          "delta_pp": 8.880555555555556,
+          "ci95_pp": [
+            8.38888888888889,
+            9.363888888888889
+          ]
+        }
+      }
+    },
+    "timestamp": {
+      "calibration_discordant": 2713,
+      "calibration_v_only": 1945,
+      "calibration_h_only": 768,
+      "fit_center": 0.10368825625777058,
+      "fit_scale": 0.3633501105275663,
+      "fit_intercept": 1.2058915277212352,
+      "fit_slope": 1.256239106223716,
+      "switch_to_H_if_MSP_H_minus_MSP_V_exceeds": 0.2450995005562075,
+      "adjusted_horizontal_choices": 6345,
+      "accuracy": {
+        "vertical": {
+          "correct": 14064,
+          "fraction": 0.39066666666666666,
+          "ci95_fraction": [
+            0.38599930555555556,
+            0.3951395833333333
+          ]
+        },
+        "horizontal": {
+          "correct": 8939,
+          "fraction": 0.24830555555555556,
+          "ci95_fraction": [
+            0.24461041666666666,
+            0.25225138888888887
+          ]
+        },
+        "raw_msp": {
+          "correct": 14035,
+          "fraction": 0.3898611111111111,
+          "ci95_fraction": [
+            0.3855277777777778,
+            0.3943347222222222
+          ]
+        },
+        "adjusted": {
+          "correct": 14571,
+          "fraction": 0.40475,
+          "ci95_fraction": [
+            0.40008333333333335,
+            0.4091680555555556
+          ]
+        },
+        "square": {
+          "correct": 16398,
+          "fraction": 0.4555,
+          "ci95_fraction": [
+            0.4506381944444444,
+            0.4603055555555556
+          ]
+        },
+        "oracle": {
+          "correct": 16997,
+          "fraction": 0.4721388888888889,
+          "ci95_fraction": [
+            0.46741666666666665,
+            0.4768895833333333
+          ]
+        }
+      },
+      "paired_contrasts": {
+        "raw_msp_minus_vertical": {
+          "gain_count": 1981,
+          "loss_count": 2010,
+          "net_count": -29,
+          "delta_pp": -0.08055555555555556,
+          "ci95_pp": [
+            -0.38902777777777775,
+            0.26944444444444443
+          ]
+        },
+        "adjusted_minus_vertical": {
+          "gain_count": 1157,
+          "loss_count": 650,
+          "net_count": 507,
+          "delta_pp": 1.4083333333333334,
+          "ci95_pp": [
+            1.1916666666666667,
+            1.6417361111111106
+          ]
+        },
+        "adjusted_minus_raw_msp": {
+          "gain_count": 1360,
+          "loss_count": 824,
+          "net_count": 536,
+          "delta_pp": 1.488888888888889,
+          "ci95_pp": [
+            1.2388194444444445,
+            1.7416666666666667
+          ]
+        },
+        "square_minus_vertical": {
+          "gain_count": 6156,
+          "loss_count": 3822,
+          "net_count": 2334,
+          "delta_pp": 6.483333333333333,
+          "ci95_pp": [
+            5.988888888888889,
+            6.988958333333333
+          ]
+        },
+        "square_minus_raw_msp": {
+          "gain_count": 6060,
+          "loss_count": 3697,
+          "net_count": 2363,
+          "delta_pp": 6.563888888888889,
+          "ci95_pp": [
+            6.036111111111111,
+            7.055624999999999
+          ]
+        },
+        "square_minus_adjusted": {
+          "gain_count": 5764,
+          "loss_count": 3937,
+          "net_count": 1827,
+          "delta_pp": 5.075,
+          "ci95_pp": [
+            4.552777777777778,
+            5.572291666666666
+          ]
+        },
+        "square_minus_oracle": {
+          "gain_count": 4605,
+          "loss_count": 5204,
+          "net_count": -599,
+          "delta_pp": -1.663888888888889,
+          "ci95_pp": [
+            -2.1638888888888888,
+            -1.1444444444444444
+          ]
+        }
+      }
+    }
+  }
+}

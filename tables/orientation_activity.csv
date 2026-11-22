@@ -1,0 +1,2 @@
+n,split,rho,contrast,average_ranks_for_ties
+9000,calibration,0.1893754717371458,log(raw_events_vertical / raw_events_horizontal),True

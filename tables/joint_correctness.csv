@@ -1,0 +1,9 @@
+cohort,crop,model,both_right,vertical_only,horizontal_only,both_wrong
+full,events30k,histogram,5662,7688,2949,19701
+mini,events30k,histogram,1516,760,238,1486
+full,events30k,timestamp,6006,8058,2933,19003
+mini,events30k,timestamp,1583,710,276,1431
+full,time20,histogram,3431,5482,3757,23330
+mini,time20,histogram,1375,715,318,1592
+full,time20,timestamp,4246,5843,3803,22108
+mini,time20,timestamp,1498,643,324,1535

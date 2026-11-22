@@ -1,0 +1,14 @@
+{
+  "analysis": "post hoc; held-out Event Histogram, 30000 events",
+  "n": 36000,
+  "selector_correct": 13490,
+  "fusion_correct": 13667,
+  "gained": 404,
+  "lost": 227,
+  "delta_pp": 0.49166666666666664,
+  "ci95_pp": [
+    0.35555555555555557,
+    0.6361111111111111
+  ],
+  "seed": 20261121
+}

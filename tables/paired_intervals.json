@@ -1,0 +1,102 @@
+{
+  "scope": "Post hoc uncertainty analyses, frozen 30,000-event Histogram / MSP confirmation",
+  "methods": {
+    "ordering": "ascending integer label, then first 64 bits of SHA-256('split/' + source_id)",
+    "within_fixed_classes": {
+      "draws": 2000,
+      "test_seed": 20261121,
+      "calibration_seed": 20261122,
+      "method": "sample paired sources within each class; refit each cutoff on independent calibration resamples; percentile interval for target minus source on common source draws"
+    },
+    "whole_classes": {
+      "draws": 20000,
+      "seed": 20261121,
+      "method": "sample 900 whole classes with replacement, retaining their 40 test pairs; compare matched and exact expected ranking and both policies within each draw; percentile intervals"
+    }
+  },
+  "pairing": {
+    "direction_order": [
+      "vertical_only",
+      "horizontal_only"
+    ],
+    "group_sizes": [
+      7688,
+      2949
+    ],
+    "singleton_counts": [
+      49,
+      156
+    ],
+    "matched_ranking_pct": 71.96979460753023,
+    "expected_repaired_ranking_pct": 71.3216366333928,
+    "matched_minus_expected_pp": 0.6481579741374333,
+    "paired_class_ci95_pp": [
+      0.14505256151147955,
+      1.1507699519876116
+    ],
+    "randomization_test": {
+      "null": "exchangeable assignments of horizontal scores within class and directional correctness group",
+      "draws": 9999,
+      "seed": 20261123,
+      "two_sided_extreme_draws": 133,
+      "p_two_sided_plus_one": 0.0134,
+      "exact_null_sd_pp": 0.2625035927965147,
+      "simulated_null_sd_pp": 0.26277821911356347,
+      "simulated_null_mean_pct": 71.31940823362125,
+      "null_reference_95pct": [
+        70.8091419462108,
+        71.83389958464906
+      ]
+    }
+  },
+  "selection": {
+    "policy": "higher raw MSP versus always vertical, ties select vertical",
+    "net_correct": 140,
+    "gain_pp": 0.3888888888888889,
+    "paired_within_class_ci95_pp": [
+      0.06666666666666667,
+      0.7111111111111111
+    ],
+    "paired_whole_class_ci95_pp": [
+      -0.39444444444444443,
+      1.1888888888888889
+    ],
+    "classes_improved": 296,
+    "classes_tied": 129,
+    "classes_worsened": 475
+  },
+  "cutoff_transfer": {
+    "V_to_H": {
+      "coverage": {
+        "target_minus_source_pp": -5.125,
+        "paired_refit_ci95_pp": [
+          -5.755555555555553,
+          -4.430555555555557
+        ]
+      },
+      "selective_error": {
+        "target_minus_source_pp": 15.622382058843215,
+        "paired_refit_ci95_pp": [
+          14.935501926386037,
+          16.26076618452793
+        ]
+      }
+    },
+    "H_to_V": {
+      "coverage": {
+        "target_minus_source_pp": 4.4750000000000085,
+        "paired_refit_ci95_pp": [
+          3.8664583333333407,
+          5.055555555555557
+        ]
+      },
+      "selective_error": {
+        "target_minus_source_pp": -15.242857277571552,
+        "paired_refit_ci95_pp": [
+          -15.848788132118461,
+          -14.5780023734827
+        ]
+      }
+    }
+  }
+}

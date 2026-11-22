@@ -1,0 +1,4 @@
+* text=auto eol=lf
+data/*.csv -text -eol
+tables/*.csv -text -eol
+tables/*.json -text -eol
