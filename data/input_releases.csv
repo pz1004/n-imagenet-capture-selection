@@ -9,3 +9,5 @@ full,checkpoint,histogram,Event Histogram/best.tar,87398105,be0191be61aa77b0ecee
 full,checkpoint,timestamp,Timestamp Image/best.tar,87398105,8ed1e57df046a8a824317314c19a4a9d21ee91694eff9a5ae93cd818a27a8ca4,https://drive.google.com/uc?id=1chgNyFbvR69Zo_JE_gXlXLkDOzEMaf2J
 mini,checkpoint,histogram,Event Histogram/model_log/best.tar,85551321,3d5c77ccc125f5f8eaa8e0e778cb4feb50bc89c8ca287a4716b79597a5f15215,https://drive.google.com/uc?id=17WY8yfbWJS7txhscjsFvYp5vybYMcc_-
 mini,checkpoint,timestamp,Timestamp Image/model_log/best.tar,85551321,31e7a099daf2ca26daf8ccbe16a6bf63efaec56448d83f851858e85e8c2ff569,https://drive.google.com/uc?id=1C04ie40GvOYDBoNLjHG8P1AVTTRU_btD
+full,event_archive,variant1,extracted_val_mode_1.zip,17694012309,84e5683d1b39ae2ef05045461f1e495e4b6ae768c9207e763ecb211608c1061f,https://huggingface.co/datasets/82magnolia/N-ImageNet/tree/a7c6726b1a2e0f1b4ff9c8f4726c57cda0269146
+full,event_archive,variant2,extracted_val_mode_5.zip,17904278142,fdfb98be5c8265e013fa8356df213fb8bfc7b8e57279ca3864894207ce453365,https://huggingface.co/datasets/82magnolia/N-ImageNet/tree/a7c6726b1a2e0f1b4ff9c8f4726c57cda0269146

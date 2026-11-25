@@ -1,0 +1,200 @@
+{
+  "n_cases": 24,
+  "archive_calibration_only": true,
+  "upstream_commit": "6815335a35b5bdf65623b3e6b1acbe3fe74b2e33",
+  "input_checks_sha256": "a901c63078414b91242393ed56d65c21495ffbcd91fae0c84095b30a1239bd27",
+  "cases": [
+    {
+      "variant": "variant1",
+      "source_id": "n01860187/ILSVRC2012_val_00033823",
+      "kind": "histogram",
+      "window": "events30k",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant1",
+      "source_id": "n01860187/ILSVRC2012_val_00033823",
+      "kind": "histogram",
+      "window": "time20",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant1",
+      "source_id": "n03297495/ILSVRC2012_val_00039493",
+      "kind": "histogram",
+      "window": "events30k",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant1",
+      "source_id": "n03297495/ILSVRC2012_val_00039493",
+      "kind": "histogram",
+      "window": "time20",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant1",
+      "source_id": "n15075141/ILSVRC2012_val_00006953",
+      "kind": "histogram",
+      "window": "events30k",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant1",
+      "source_id": "n15075141/ILSVRC2012_val_00006953",
+      "kind": "histogram",
+      "window": "time20",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant1",
+      "source_id": "n01860187/ILSVRC2012_val_00033823",
+      "kind": "timestamp",
+      "window": "events30k",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant1",
+      "source_id": "n01860187/ILSVRC2012_val_00033823",
+      "kind": "timestamp",
+      "window": "time20",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant1",
+      "source_id": "n03297495/ILSVRC2012_val_00039493",
+      "kind": "timestamp",
+      "window": "events30k",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant1",
+      "source_id": "n03297495/ILSVRC2012_val_00039493",
+      "kind": "timestamp",
+      "window": "time20",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant1",
+      "source_id": "n15075141/ILSVRC2012_val_00006953",
+      "kind": "timestamp",
+      "window": "events30k",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant1",
+      "source_id": "n15075141/ILSVRC2012_val_00006953",
+      "kind": "timestamp",
+      "window": "time20",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant2",
+      "source_id": "n01860187/ILSVRC2012_val_00033823",
+      "kind": "histogram",
+      "window": "events30k",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant2",
+      "source_id": "n01860187/ILSVRC2012_val_00033823",
+      "kind": "histogram",
+      "window": "time20",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant2",
+      "source_id": "n03297495/ILSVRC2012_val_00039493",
+      "kind": "histogram",
+      "window": "events30k",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant2",
+      "source_id": "n03297495/ILSVRC2012_val_00039493",
+      "kind": "histogram",
+      "window": "time20",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant2",
+      "source_id": "n15075141/ILSVRC2012_val_00006953",
+      "kind": "histogram",
+      "window": "events30k",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant2",
+      "source_id": "n15075141/ILSVRC2012_val_00006953",
+      "kind": "histogram",
+      "window": "time20",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant2",
+      "source_id": "n01860187/ILSVRC2012_val_00033823",
+      "kind": "timestamp",
+      "window": "events30k",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant2",
+      "source_id": "n01860187/ILSVRC2012_val_00033823",
+      "kind": "timestamp",
+      "window": "time20",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant2",
+      "source_id": "n03297495/ILSVRC2012_val_00039493",
+      "kind": "timestamp",
+      "window": "events30k",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant2",
+      "source_id": "n03297495/ILSVRC2012_val_00039493",
+      "kind": "timestamp",
+      "window": "time20",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant2",
+      "source_id": "n15075141/ILSVRC2012_val_00006953",
+      "kind": "timestamp",
+      "window": "events30k",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    },
+    {
+      "variant": "variant2",
+      "source_id": "n15075141/ILSVRC2012_val_00006953",
+      "kind": "timestamp",
+      "window": "time20",
+      "tensor_max_abs": 0.0,
+      "logit_max_abs": 0.0
+    }
+  ]
+}

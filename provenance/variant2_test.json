@@ -1,0 +1,45 @@
+{
+  "variant": "variant2",
+  "split": "test",
+  "n": 36000,
+  "registry_revision": "a7c6726b1a2e0f1b4ff9c8f4726c57cda0269146",
+  "archive_sha256": "fdfb98be5c8265e013fa8356df213fb8bfc7b8e57279ca3864894207ce453365",
+  "references": {
+    "protocol_receipt_sha256": "bb9a30477c607dd972615e9cdc4c091b3bf8350331c723423153dba23d9af3eb",
+    "historical_lock_sha256": "e0b299d75a234867269d277f7a9016e558f9087aeb08afb8fae74600eb81aada",
+    "sha256_new_parity": "5678ab38556793e1a34c16d6f4cb1a603d2793b70f89ba2989d00d7764a07c50",
+    "forecast": {
+      "file": "revision-transfer/forecast_receipt.json",
+      "sha256": "bbe8006218b42a7e010bc4e63ab861eecddecb67ac3cd2ddbe16bb0e9757179f",
+      "release_sha256": "13ddeab65c546d0d9f46e1bb619d72a1b4008947b8d78ff70e5610a979c18262",
+      "release_utc": "2026-11-25T13:42:54.973616+00:00"
+    }
+  },
+  "started_utc": "2026-11-25T13:46:39.706839+00:00",
+  "finished_utc": "2026-11-25T13:50:17.935114+00:00",
+  "elapsed_seconds": 226.332234764006,
+  "model_kinds": [
+    "histogram",
+    "timestamp"
+  ],
+  "crop_windows": [
+    "events30k",
+    "time20"
+  ],
+  "cuda": "12.8",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "batch": 32,
+  "encoder_workers": 6,
+  "runner_sha256": "3279bade9e3ce056f8cf84d7e78060a9ad17c33fd5731428f0ee14170fc8c236",
+  "output_logits_recalculated": true,
+  "window_exceptions": [],
+  "outputs_sha256": {
+    "events30k/histogram.npy": "2ff91224fdbc98fd00ad11191b7b603b07fd59acb506929e5398d9d088c05a55",
+    "events30k/predictions.csv": "529f5035674e709e9e69f9b3547cb1a79286624fbaf68f150ad76eb9e0ed736a",
+    "events30k/timestamp.npy": "a7cc0b91a276ed9d366634535f63f39779b26c089c8dde5f8662d9772a83fb43",
+    "time20/histogram.npy": "e42f902c853b06cbc83c9ce920903d4548666e03ccecce7b260f3c55be5ca396",
+    "time20/predictions.csv": "2906bd5f54f6e52208f6655546572690affef582a29e7bfe34a540a813d0cf1f",
+    "time20/timestamp.npy": "c2be49d6d4c157b8abc8512cef7241b0dd517e46b978ecd734fc086c5fe8897d"
+  }
+}

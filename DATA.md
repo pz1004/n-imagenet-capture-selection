@@ -26,7 +26,7 @@ These files are in `data/`. In filenames, `events30k` denotes a contiguous crop 
 | `whole_source_features.csv`, `registration_landmarks.csv` | Whole-photograph dimensions and directional gradient energies. The orientation index is `(energy_y − energy_x) / (energy_y + energy_x + 1e−12)`. The registration file records 240 landmark attempts per direction with errors in native sensor pixels. |
 | `orientation_*_discordant.csv` (4) | Held-out sources with exactly one correct scan. Rows give the observed direction, orientation bin, predictors, predicted probabilities of vertical-only correctness, and log losses from the baseline and augmented models. |
 | `fusion.csv` | Classes selected by higher confidence and by averaging class probabilities for 36,000 held-out sources, using Event Histogram and up to 30,000 events. |
-| `input_releases.csv` | Filenames, upstream download locations, byte counts and SHA-256 hashes for the six event archives and four checkpoints. |
+| `input_releases.csv` | Filenames, upstream download locations, byte counts and SHA-256 hashes for the eight event archives and four checkpoints. |
 
 ## Estimates and uncertainty
 
@@ -43,9 +43,41 @@ The files in `tables/` use fractions for CSV accuracy, ranking and coverage rate
 
 In `selection.csv`, each policy row has its own estimate, confidence limits and correct or net count, while every row for the same crop and model repeats the higher-MSP selector's `rescues` and `harms` relative to always choosing vertical and its `ties_to_vertical` count.
 
+## Acquisition-transfer files
+
+Paper variants 1 and 2 are the new vertical (8.33 Hz, 4.5 mm) and horizontal (5 Hz, 3 mm) trajectories. Variants 3 and 4 formed the original 5 Hz, 6 mm linear pair. The horizontal same-axis comparison takes variant 2 first and variant 4 second.
+
+| Files | Contents |
+|---|---|
+| `data/variant{1,2}_{events30k,time20}.csv.gz` | Each of the four files contains both checkpoints and both splits for one acquisition and observation window. Join by source ID. Each record gives the true class, split, crop metadata, predicted class, raw maximum softmax probability and logit margin for each checkpoint. |
+| `data/trajectory_baseline_decisions.csv.gz` | The 36,000 test sources for each combination of pair, window and checkpoint. Each row contains both raw and temperature-scaled probabilities for the predicted class, the two predicted classes, the raw and scaled selections, and the class predicted by probability averaging. |
+| `tables/trajectory_forecast.json`, `trajectory_forecast_draws.npz`, `trajectory_forecast_receipt.json` | Calibration forecasts, paired bootstrap replicates, and the timestamped receipt recorded before evaluating the held-out conditions. The SHA-256 values for the forecast file and draws in the receipt verify the corresponding files here. |
+| `tables/trajectory_gains.json`, `trajectory_baselines.json` | Paired policy gains, directional counts, forecast errors, score fusion, calibration diagnostics and the fixed-axis amplitude comparison. The matched differences in policy effects between acquisition pairs appear in `trajectory_effect_changes.json`. In the gain table, forecast error equals forecast minus observed gain. |
+| `tables/trajectory_rescans_{old,new}.csv` | Costs and accuracy at 0%, 10%, 30%, 50% and 100% nominal second-scan requests. `old_frozen` transports a numerical first-scan cutoff. `target_local` estimates it on local calibration sources and refits it for each calibration resample. `within` and `class` limits are paired 95% percentile intervals. The random-request expected accuracy uses the same realized mean scan count and frozen terminal decision. |
+
+The shared tables suffice for recomputing the two forecasts, held-out decision counts, policy contrasts, calibration bins, and acquisition-budget curves. Multiclass temperature refitting, negative log likelihood and probability-vector averaging require 1,000 logits per scan. The regeneration scripts calculate these from the authors’ event archives and checkpoints.
+
+## Transfer breakdown, label budgets and timing records
+
+`tables/trajectory_attribution.json` contains changes in the mix of directional successes, the two conditional success rates, and the corresponding midpoint-weighted contributions to the change in discordant accuracy. The same file reports additional correct classifications per 100 second scans, their paired intervals and the fraction of the always-two gain recovered. `tables/label_budget.csv` gives the annotation budget and error summaries for each checkpoint at 30,000 events. The central 95% range across sampled calibration subsets describes variation among choices from the available pool. For the class-balanced design, the separate containment fraction counts subsets whose entire two-sample 95% error interval fits inside one percentage point of zero.
+
+The provenance directory contains byte-preserved originals from the transfer experiment. The following table maps paths recorded in those receipts to the released copies. Historical paths are relative to the trajectory-transfer analysis unless they begin with an explicit study directory.
+
+| Original artifact | Released location |
+|---|---|
+| `FROZEN_PROTOCOL.md`, `protocol_receipt.json`, `test_release.json` | Same filenames in `provenance/` |
+| `acquisition/input_checks.json`, `acquisition/new_parity.json`, `acquisition/inference_verification.json` | Same filenames in `provenance/` |
+| `results/gain/sealed_forecast_verification.json` | `provenance/sealed_forecast_verification.json` |
+| `outputs/{split}/{variant}/run.json` | `provenance/{variant}_{split}.json` |
+| `forecast_receipt.json`, `results/gain/forecast.json`, `results/gain/forecast_draws.npz` | `tables/trajectory_forecast_receipt.json`, `tables/trajectory_forecast.json`, `tables/trajectory_forecast_draws.npz` |
+| `outputs/{split}/{variant}/{window}/predictions.csv` | Retain the header and matching split rows in `data/{variant}_{window}.csv.gz` |
+| `manuscript-mva/verification/revised_policy.json`, `full-confirmation/checks/class_map.csv` | `tables/capture_policies.json`, `data/class_map.csv` |
+
+The protocol receipt also contains checksums of earlier working files. The public code implements the replay using the released measurements. Each run record carries the original float32 logit-array checksums. Those arrays can be regenerated with the upstream inputs as described in the README. The 9,000 calibration and 36,000 test prediction rows for each variant and window reproduce the individual CSV hashes in the run records.
+
 ## File integrity
 
-`data_manifest.csv` lists the relative path, size in bytes and SHA-256 digest of each of the 39 quantitative files. On Linux, run the following in the repository root to check every digest.
+`data_manifest.csv` lists the relative path, size in bytes and SHA-256 digest of each released data, table and provenance file. On Linux, run the following in the repository root to check every digest.
 
 ```sh
 awk -F, 'NR > 1 {print $3 "  " $1}' data_manifest.csv | sha256sum --check

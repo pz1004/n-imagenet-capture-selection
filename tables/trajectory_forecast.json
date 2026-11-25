@@ -1,0 +1,133 @@
+{
+  "created_utc": "2026-11-25T13:42:53.131625+00:00",
+  "n_calibration": 9000,
+  "fold_convention": "rank by (class, SHA-256(split/ + source_id)[:8]); offset within class mod 5",
+  "B_per_bootstrap": 2000,
+  "method": "gain in percentage points relative to variant 1; same sources retained across acquisition settings",
+  "input_sha256": {
+    "revision-transfer/FROZEN_PROTOCOL.md": "de8934377f52c7396f7ad463c67a3a5a2295697c58bb538af5f492fe5ddb818a",
+    "revision-transfer/protocol_receipt.json": "bb9a30477c607dd972615e9cdc4c091b3bf8350331c723423153dba23d9af3eb",
+    "full-confirmation/checks/split_manifest.csv": "97543b377f4e606bd7984767e6e5436fe509a8585f5f556f68e7a481f965bb01",
+    "manuscript-mva/verification/revised_policy.json": "6485e8b1148dc0d540a4b3edcf1f970d3dcaff743405e1f8ef5a178f7e39f51e",
+    "manuscript-mva/verification/revised_policy.py": "28041f5951ad950aa0a8b143f7539af9cb694931fda111a13bb768a5c0d5e8bd",
+    "revision-transfer/gain_data.py": "25b77e15b0157ca473f06872473a3dff5073f2a316b6a3be2fb6c8eec01b1e29",
+    "revision-transfer/evaluate_gain.py": "9f04a387c3b8332132f617609ee5b0bcf6a304b8fe52ac440d2e54bc0b8c5036",
+    "revision-transfer/forecast_gain.py": "cbf4435a627e9f46dfe39a7994af53b8fb75d3a3d497d57125d2af1116680435",
+    "revision-transfer/outputs/calibration/variant1/events30k/predictions.csv": "78a2cfc9bc30fd06922e506dc4f6563f077f8b67773e4a94b30716d400ab7051",
+    "revision-transfer/outputs/calibration/variant2/events30k/predictions.csv": "6758df427a69456111667ab99b7be384252684e5450f59d81d9194c22a08ecdd",
+    "old_calibration_crossfit_inputs_histogram": "5ecf2119c2aac18077ada3aefccfe1bc8cdcd93b9830e643dc5ef36f767a7018",
+    "old_calibration_crossfit_inputs_timestamp": "fbc8f4dc16b431dffb662d949b8f4956634045535410b6d0278e0ca3cc7c7722"
+  },
+  "models": {
+    "histogram": {
+      "old_oof_discordant_accuracy": 0.7728147862918753,
+      "target_discordant": 2331,
+      "target_first_only": 1616,
+      "target_second_only": 715,
+      "target_d": 0.259,
+      "target_pi": 0.6932646932646932,
+      "threshold": 0.2123598185044876,
+      "target_rescues": 262,
+      "target_losses": 156,
+      "transported_pp": 2.060347409404015,
+      "direct_pp": 1.1777777777777776,
+      "transported_sign": 1,
+      "direct_sign": 1,
+      "d_within_95": [
+        0.2508888888888889,
+        0.26744722222222217
+      ],
+      "pi_within_95": [
+        0.6763013374465414,
+        0.7095410217329822
+      ],
+      "transported_within_95": [
+        1.447484142039078,
+        2.6765364973026733
+      ],
+      "direct_within_95": [
+        0.7777777777777772,
+        1.6111111111111078
+      ],
+      "old_a_within_95": [
+        0.7566923371881935,
+        0.7885594351728059
+      ],
+      "d_class_95": [
+        0.248,
+        0.2693333333333333
+      ],
+      "pi_class_95": [
+        0.6689199356895388,
+        0.7164563917095564
+      ],
+      "transported_class_95": [
+        1.3147180127041052,
+        2.7943418987423487
+      ],
+      "direct_class_95": [
+        0.6555555555555537,
+        1.6888888888888898
+      ],
+      "old_a_class_95": [
+        0.7541926674021514,
+        0.7907140637140636
+      ]
+    },
+    "timestamp": {
+      "old_oof_discordant_accuracy": 0.7640987836343531,
+      "target_discordant": 2336,
+      "target_first_only": 1537,
+      "target_second_only": 799,
+      "target_d": 0.25955555555555554,
+      "target_pi": 0.6579623287671234,
+      "threshold": 0.2450995005562075,
+      "target_rescues": 274,
+      "target_losses": 152,
+      "transported_pp": 2.7548306507760967,
+      "direct_pp": 1.3555555555555543,
+      "transported_sign": 1,
+      "direct_sign": 1,
+      "d_within_95": [
+        0.25133333333333335,
+        0.2685583333333333
+      ],
+      "pi_within_95": [
+        0.6418210985763213,
+        0.6752938349340977
+      ],
+      "transported_within_95": [
+        2.2177431154741125,
+        3.3691578079758315
+      ],
+      "direct_within_95": [
+        0.9444444444444422,
+        1.7777777777777781
+      ],
+      "old_a_within_95": [
+        0.7506482328804903,
+        0.7801033145489914
+      ],
+      "d_class_95": [
+        0.24944444444444444,
+        0.2697777777777778
+      ],
+      "pi_class_95": [
+        0.6341102869961098,
+        0.6834134359705127
+      ],
+      "transported_class_95": [
+        2.062822144165701,
+        3.4802895179379463
+      ],
+      "direct_class_95": [
+        0.8444444444444421,
+        1.8555555555555547
+      ],
+      "old_a_class_95": [
+        0.7457296983015868,
+        0.7860140835121662
+      ]
+    }
+  }
+}

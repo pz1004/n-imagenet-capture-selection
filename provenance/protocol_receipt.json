@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-25T12:48:49.881089+00:00",
+  "sha256": {
+    "manuscript-mva/MVA_REVISION_PLAN.md": "3378213ef81b3ba9a90798fd229ac1ee7f48bf00cb5f6309f2823942f669b434",
+    "manuscript-mva/verification/revised_policy.json": "6485e8b1148dc0d540a4b3edcf1f970d3dcaff743405e1f8ef5a178f7e39f51e",
+    "full-confirmation/checks/split_manifest.csv": "97543b377f4e606bd7984767e6e5436fe509a8585f5f556f68e7a481f965bb01",
+    "full-confirmation/checks/class_map.csv": "8e51451f7d596d33b4a6d06de7c91a2493efff1b6feb75d4f745a0c7499dd346",
+    "full-confirmation/checks/execution_lock.json": "e0b299d75a234867269d277f7a9016e558f9087aeb08afb8fae74600eb81aada",
+    "full-confirmation/checks/original_gate.json": "8f8360c8a14980824927bc60ff1562686a252a91d40b37e4834a2db62fc1c13b",
+    "revision-transfer/FROZEN_PROTOCOL.md": "de8934377f52c7396f7ad463c67a3a5a2295697c58bb538af5f492fe5ddb818a"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "verified_utc": "2026-11-25T13:50:46.678059+00:00",
+  "forecast_receipt_sha256": "bbe8006218b42a7e010bc4e63ab861eecddecb67ac3cd2ddbe16bb0e9757179f",
+  "test_release_sha256": "13ddeab65c546d0d9f46e1bb619d72a1b4008947b8d78ff70e5610a979c18262",
+  "runs": [
+    {
+      "variant": "variant1",
+      "split": "calibration",
+      "source_ids_checked": 9000,
+      "models": [
+        "histogram",
+        "timestamp"
+      ],
+      "windows": [
+        "events30k",
+        "time20"
+      ],
+      "window_exceptions": [],
+      "run_receipt_sha256": "917cd6f508dde165ee5569c1c8aa98e9d3367f96e6f536de34ac46e8462145dd"
+    },
+    {
+      "variant": "variant2",
+      "split": "calibration",
+      "source_ids_checked": 9000,
+      "models": [
+        "histogram",
+        "timestamp"
+      ],
+      "windows": [
+        "events30k",
+        "time20"
+      ],
+      "window_exceptions": [],
+      "run_receipt_sha256": "5258d500be88d7f796481f7c770a1359ae4104eeb155517ddbc02d9dda1ad18f"
+    },
+    {
+      "variant": "variant1",
+      "split": "test",
+      "source_ids_checked": 36000,
+      "models": [
+        "histogram",
+        "timestamp"
+      ],
+      "windows": [
+        "events30k",
+        "time20"
+      ],
+      "window_exceptions": [],
+      "run_receipt_sha256": "dd3dc9e5d6b56265f2dd3f9211313dea1c6c9ae1774f59009df1a08448d004ba"
+    },
+    {
+      "variant": "variant2",
+      "split": "test",
+      "source_ids_checked": 36000,
+      "models": [
+        "histogram",
+        "timestamp"
+      ],
+      "windows": [
+        "events30k",
+        "time20"
+      ],
+      "window_exceptions": [],
+      "run_receipt_sha256": "43551c58950e9bb3c7cd3a45ce69978e0dc9c79cd9a002b8eb4d5863e4b3c70e"
+    }
+  ]
+}

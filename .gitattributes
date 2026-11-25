@@ -2,3 +2,6 @@
 data/*.csv -text -eol
 tables/*.csv -text -eol
 tables/*.json -text -eol
+data/*.gz binary
+tables/*.npz binary
+provenance/** -text -eol

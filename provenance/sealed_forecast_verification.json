@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "calibration_only": true,
+  "models": {
+    "histogram": {
+      "weighted_old_oof": 0.7728147862918753,
+      "verified_replicates": {
+        "within": 3,
+        "class": 3
+      }
+    },
+    "timestamp": {
+      "weighted_old_oof": 0.7640987836343531,
+      "verified_replicates": {
+        "within": 3,
+        "class": 3
+      }
+    }
+  }
+}

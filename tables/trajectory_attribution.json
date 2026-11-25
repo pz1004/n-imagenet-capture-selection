@@ -1,0 +1,1166 @@
+{
+  "methods": {
+    "decomposition": "Transfer minus reference, midpoint weights, in percentage points of discordant accuracy.",
+    "yield": "Net additional correct choices vs fixed vertical per 100 second scans. Uniform requests have the same expected workload and terminal selector.",
+    "fraction": "Directed net gain divided by always-two net gain. Replicates with nonpositive denominator excluded from this fraction alone.",
+    "intervals": "Pointwise 95% percentile intervals. 2000 paired resamples within the 900 classes or of whole classes. Cutoffs are fixed."
+  },
+  "model_windows": {
+    "events30k_histogram": {
+      "n_sources": 36000,
+      "first_scan_request_cutoff": 0.3469158656471383,
+      "terminal_threshold": 0.2123598185044876,
+      "counts": {
+        "old": {
+          "first_only_n": 7688,
+          "second_only_n": 2949,
+          "first_only_chosen_correct": 6978,
+          "second_only_chosen_correct": 1274,
+          "requested_n": 10987,
+          "rescued_n": 628,
+          "lost_n": 332,
+          "all_two_net_correct_n": 564
+        },
+        "new": {
+          "first_only_n": 6466,
+          "second_only_n": 2953,
+          "first_only_chosen_correct": 5779,
+          "second_only_chosen_correct": 1071,
+          "requested_n": 11076,
+          "rescued_n": 577,
+          "lost_n": 320,
+          "all_two_net_correct_n": 384
+        }
+      },
+      "results": {
+        "change_discordant_accuracy_pp": {
+          "estimate": -4.85292215523954,
+          "within_95": [
+            -5.956233960018221,
+            -3.6918157337549324
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -6.322816672228727,
+            -3.3333572500162623
+          ],
+          "class_valid_draws": 2000
+        },
+        "mix_pp": {
+          "estimate": -1.8259361836334822,
+          "within_95": [
+            -2.3783312933621867,
+            -1.2433200238875899
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -3.0614096872389807,
+            -0.6684504670956578
+          ],
+          "class_valid_draws": 2000
+        },
+        "first_retention_pp": {
+          "estimate": -0.9791680365916227,
+          "within_95": [
+            -1.6837485565815036,
+            -0.3027087997597521
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -1.6782768449648777,
+            -0.2607287721197616
+          ],
+          "class_valid_draws": 2000
+        },
+        "second_recovery_pp": {
+          "estimate": -2.0478179350144172,
+          "within_95": [
+            -2.7108332917746196,
+            -1.3357302446657664
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -2.9179669939879704,
+            -1.1584232582161964
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_first_only_share_pct": {
+          "estimate": 72.27601767415625,
+          "within_95": [
+            71.47241550910908,
+            73.01219838659665
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            69.6603366317569,
+            74.73521166081056
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_first_retention_pct": {
+          "estimate": 90.76482830385015,
+          "within_95": [
+            90.12697574411513,
+            91.41186288324633
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            89.97109934584716,
+            91.50145093033824
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_second_recovery_pct": {
+          "estimate": 43.201085113597834,
+          "within_95": [
+            41.51569813061161,
+            44.912891859631706
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            40.692608625331076,
+            45.73854558556169
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_discordant_accuracy_pct": {
+          "estimate": 77.57826454827489,
+          "within_95": [
+            76.79514905752359,
+            78.32218084320657
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            76.18523368251411,
+            78.93570486047341
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_net_correct_per_100_extra_directed": {
+          "estimate": 2.694093019022481,
+          "within_95": [
+            2.157126868969602,
+            3.2328031850922674
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            1.7214149967473462,
+            3.689246536282284
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_net_correct_per_100_extra_uniform_expected": {
+          "estimate": 1.5666666666666667,
+          "within_95": [
+            1.3444444444444446,
+            1.8027777777777778
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            1.0333333333333332,
+            2.1445138888888886
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_additional_net_per_100_vs_uniform": {
+          "estimate": 1.1274263523558143,
+          "within_95": [
+            0.7105614610720298,
+            1.5366629667800615
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            0.5964326501898775,
+            1.6640520369074334
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_share_of_always_two_incremental_gain_pct": {
+          "estimate": 52.4822695035461,
+          "within_95": [
+            44.8905172249078,
+            60.23159961186681
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            43.56858925869894,
+            62.23731924861479
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_first_only_share_pct": {
+          "estimate": 68.64847648370316,
+          "within_95": [
+            67.78783626634163,
+            69.53673405459377
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            66.79779177503372,
+            70.56588413482923
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_first_retention_pct": {
+          "estimate": 89.37519331889887,
+          "within_95": [
+            88.61673162255649,
+            90.13032632619861
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            88.56831018123437,
+            90.1993338976319
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_second_recovery_pct": {
+          "estimate": 36.268201828648834,
+          "within_95": [
+            34.62461250830339,
+            37.978465795326215
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            34.188660456419754,
+            38.42049131659995
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_discordant_accuracy_pct": {
+          "estimate": 72.72534239303535,
+          "within_95": [
+            71.8574380540877,
+            73.5931702226345
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            71.45900331972375,
+            74.04061803428385
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_net_correct_per_100_extra_directed": {
+          "estimate": 2.3203322499097148,
+          "within_95": [
+            1.7970896030768901,
+            2.831306477638125
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            1.6462769474824683,
+            3.039641180188489
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_net_correct_per_100_extra_uniform_expected": {
+          "estimate": 1.0666666666666667,
+          "within_95": [
+            0.8277777777777778,
+            1.2944444444444445
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            0.7333333333333333,
+            1.4084027777777772
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_additional_net_per_100_vs_uniform": {
+          "estimate": 1.253665583243048,
+          "within_95": [
+            0.8652485284159533,
+            1.6368354517983525
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            0.811923607081692,
+            1.7302104687429605
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_share_of_always_two_incremental_gain_pct": {
+          "estimate": 66.92708333333334,
+          "within_95": [
+            56.298367074102366,
+            78.90692708333333
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            55.51793478260869,
+            81.16981173189225
+          ],
+          "class_valid_draws": 2000
+        }
+      }
+    },
+    "events30k_timestamp": {
+      "n_sources": 36000,
+      "first_scan_request_cutoff": 0.3315037032204393,
+      "terminal_threshold": 0.2450995005562075,
+      "counts": {
+        "old": {
+          "first_only_n": 8058,
+          "second_only_n": 2933,
+          "first_only_chosen_correct": 7408,
+          "second_only_chosen_correct": 1157,
+          "requested_n": 10584,
+          "rescued_n": 552,
+          "lost_n": 307,
+          "all_two_net_correct_n": 507
+        },
+        "new": {
+          "first_only_n": 6226,
+          "second_only_n": 3061,
+          "first_only_chosen_correct": 5581,
+          "second_only_chosen_correct": 1074,
+          "requested_n": 11139,
+          "rescued_n": 591,
+          "lost_n": 331,
+          "all_two_net_correct_n": 429
+        }
+      },
+      "results": {
+        "change_discordant_accuracy_pp": {
+          "estimate": -6.268086430377849,
+          "within_95": [
+            -7.412142394690834,
+            -5.130665737476888
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -7.825299605461864,
+            -4.722380853166234
+          ],
+          "class_valid_draws": 2000
+        },
+        "mix_pp": {
+          "estimate": -3.3581393134621584,
+          "within_95": [
+            -3.9727951698628896,
+            -2.7757816494192213
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -4.531000782872036,
+            -2.193219058723381
+          ],
+          "class_valid_draws": 2000
+        },
+        "first_retention_pp": {
+          "estimate": -1.6093492326654313,
+          "within_95": [
+            -2.2584484947307937,
+            -0.9683204558864821
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -2.322498400749302,
+            -0.8802931171461164
+          ],
+          "class_valid_draws": 2000
+        },
+        "second_recovery_pp": {
+          "estimate": -1.3005978842502608,
+          "within_95": [
+            -2.0230193378824968,
+            -0.6052993145351403
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -2.149350795191602,
+            -0.4897356461142341
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_first_only_share_pct": {
+          "estimate": 73.31453007005732,
+          "within_95": [
+            72.58766014761494,
+            74.04292334330509
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            70.70954355628122,
+            75.79938135218735
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_first_retention_pct": {
+          "estimate": 91.93348225366096,
+          "within_95": [
+            91.35385826918852,
+            92.5320567873978
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            91.22848494009108,
+            92.594918699696
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_second_recovery_pct": {
+          "estimate": 39.44766450733038,
+          "within_95": [
+            37.70441119326917,
+            41.19558549745795
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            36.92444495076074,
+            42.09827481302101
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_discordant_accuracy_pct": {
+          "estimate": 77.9273951414794,
+          "within_95": [
+            77.1936106034677,
+            78.68008332266702
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            76.42940167436966,
+            79.38191547826175
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_net_correct_per_100_extra_directed": {
+          "estimate": 2.314814814814815,
+          "within_95": [
+            1.7950671641085194,
+            2.847136708312121
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            1.4313871317194191,
+            3.189305673226385
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_net_correct_per_100_extra_uniform_expected": {
+          "estimate": 1.4083333333333332,
+          "within_95": [
+            1.1972222222222222,
+            1.6222916666666662
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            0.9247222222222222,
+            1.913888888888889
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_additional_net_per_100_vs_uniform": {
+          "estimate": 0.9064814814814813,
+          "within_95": [
+            0.5072338494226275,
+            1.3220440123881962
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            0.4079045821069939,
+            1.3790547181262114
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_share_of_always_two_incremental_gain_pct": {
+          "estimate": 48.32347140039448,
+          "within_95": [
+            40.41920310537732,
+            56.74629987129987
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            39.12038523274479,
+            57.109851049424506
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_first_only_share_pct": {
+          "estimate": 67.03994831484871,
+          "within_95": [
+            66.15516784381279,
+            67.9103132730365
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            64.9867960428525,
+            69.042015455297
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_first_retention_pct": {
+          "estimate": 89.64021843880501,
+          "within_95": [
+            88.92454276961246,
+            90.34350261554555
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            88.77231058213974,
+            90.45988567214518
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_second_recovery_pct": {
+          "estimate": 35.08657301535446,
+          "within_95": [
+            33.365884622713416,
+            36.689760000994696
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            33.07204296880946,
+            37.114248770303604
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_discordant_accuracy_pct": {
+          "estimate": 71.65930871110154,
+          "within_95": [
+            70.71804788128574,
+            72.56230055164872
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            70.2752457173257,
+            72.94236957870832
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_net_correct_per_100_extra_directed": {
+          "estimate": 2.3341413053236377,
+          "within_95": [
+            1.8096750021554586,
+            2.8556051273834764
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            1.619767931738911,
+            3.043892618956291
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_net_correct_per_100_extra_uniform_expected": {
+          "estimate": 1.1916666666666667,
+          "within_95": [
+            0.9777777777777777,
+            1.4056249999999995
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            0.8388194444444443,
+            1.538958333333333
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_additional_net_per_100_vs_uniform": {
+          "estimate": 1.1424746386569709,
+          "within_95": [
+            0.7488235493723512,
+            1.5431293295963247
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            0.672657948415222,
+            1.6108347857015115
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_share_of_always_two_incremental_gain_pct": {
+          "estimate": 60.60606060606061,
+          "within_95": [
+            51.426948051948045,
+            70.22228464419474
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            50.35617793974428,
+            73.11211291540786
+          ],
+          "class_valid_draws": 2000
+        }
+      }
+    },
+    "time20_histogram": {
+      "n_sources": 36000,
+      "first_scan_request_cutoff": 0.3374309003120563,
+      "terminal_threshold": 0.2123598185044876,
+      "counts": {
+        "old": {
+          "first_only_n": 5482,
+          "second_only_n": 3757,
+          "first_only_chosen_correct": 4929,
+          "second_only_chosen_correct": 1702,
+          "requested_n": 10784,
+          "rescued_n": 782,
+          "lost_n": 230,
+          "all_two_net_correct_n": 1149
+        },
+        "new": {
+          "first_only_n": 5309,
+          "second_only_n": 3510,
+          "first_only_chosen_correct": 4761,
+          "second_only_chosen_correct": 1383,
+          "requested_n": 10629,
+          "rescued_n": 684,
+          "lost_n": 256,
+          "all_two_net_correct_n": 835
+        }
+      },
+      "results": {
+        "change_discordant_accuracy_pp": {
+          "estimate": -2.1040739939759163,
+          "within_95": [
+            -3.323954494443074,
+            -0.8450407809594198
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -4.017768560396505,
+            -0.22594912702892828
+          ],
+          "class_valid_draws": 2000
+        },
+        "mix_pp": {
+          "estimate": 0.4099777658230017,
+          "within_95": [
+            -0.16928472097879038,
+            1.0005530411481571
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -1.2355302771703967,
+            1.9697887663020603
+          ],
+          "class_valid_draws": 2000
+        },
+        "first_retention_pp": {
+          "estimate": -0.14017586254730488,
+          "within_95": [
+            -0.823325857210738,
+            0.5004431121628076
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -0.8647586686609263,
+            0.6221770390185432
+          ],
+          "class_valid_draws": 2000
+        },
+        "second_recovery_pp": {
+          "estimate": -2.3738758972516334,
+          "within_95": [
+            -3.2173962030195074,
+            -1.5065331405236477
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -3.45042519436615,
+            -1.2554875590426235
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_first_only_share_pct": {
+          "estimate": 59.33542591189522,
+          "within_95": [
+            58.5129973021526,
+            60.129812223527814
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            55.82221488012553,
+            62.679326234346426
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_first_retention_pct": {
+          "estimate": 89.9124407150675,
+          "within_95": [
+            89.08920349392278,
+            90.69985358421701
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            88.88266743604339,
+            90.86458177822631
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_second_recovery_pct": {
+          "estimate": 45.30210274154911,
+          "within_95": [
+            43.77493355894766,
+            46.79682593631402
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            42.80928765815846,
+            47.847191973152526
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_discordant_accuracy_pct": {
+          "estimate": 71.77183677887217,
+          "within_95": [
+            70.93183347314178,
+            72.62292052487123
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            70.00405733061498,
+            73.49034440224374
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_net_correct_per_100_extra_directed": {
+          "estimate": 5.118694362017804,
+          "within_95": [
+            4.571098185497782,
+            5.639074856282458
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            4.109687230652753,
+            6.167267837798995
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_net_correct_per_100_extra_uniform_expected": {
+          "estimate": 3.191666666666667,
+          "within_95": [
+            2.9472222222222224,
+            3.4361111111111113
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            2.560902777777778,
+            3.8752083333333323
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_additional_net_per_100_vs_uniform": {
+          "estimate": 1.927027695351137,
+          "within_95": [
+            1.5011494665816478,
+            2.3627790176682972
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            1.3680909526316893,
+            2.494559703234518
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_share_of_always_two_incremental_gain_pct": {
+          "estimate": 48.04177545691906,
+          "within_95": [
+            44.196370543451344,
+            51.87570789698864
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            42.937099308775004,
+            53.43473653910763
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_first_only_share_pct": {
+          "estimate": 60.19956911214423,
+          "within_95": [
+            59.27627451325138,
+            61.16112143290327
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            57.76719856211754,
+            62.64021080086518
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_first_retention_pct": {
+          "estimate": 89.67790544358635,
+          "within_95": [
+            88.87822840941733,
+            90.4808208828017
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            88.75028834386548,
+            90.57528948863562
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_second_recovery_pct": {
+          "estimate": 39.401709401709404,
+          "within_95": [
+            37.87566315052771,
+            41.019837513613076
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            37.47778023300065,
+            41.56337205861913
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_discordant_accuracy_pct": {
+          "estimate": 69.66776278489625,
+          "within_95": [
+            68.7506004817937,
+            70.61467484557906
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            68.2768724382104,
+            71.11021104260105
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_net_correct_per_100_extra_directed": {
+          "estimate": 4.026719352714273,
+          "within_95": [
+            3.46922726442023,
+            4.570890014349659
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            3.282101938250331,
+            4.791587076069157
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_net_correct_per_100_extra_uniform_expected": {
+          "estimate": 2.3194444444444446,
+          "within_95": [
+            2.086041666666667,
+            2.552847222222222
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            1.91375,
+            2.7584027777777775
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_additional_net_per_100_vs_uniform": {
+          "estimate": 1.707274908269828,
+          "within_95": [
+            1.2753699330510782,
+            2.1327671962981434
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            1.2337053287609163,
+            2.159016576303376
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_share_of_always_two_incremental_gain_pct": {
+          "estimate": 51.25748502994012,
+          "within_95": [
+            46.36593236699169,
+            56.2733804728027
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            45.761501210653755,
+            57.044355242186214
+          ],
+          "class_valid_draws": 2000
+        }
+      }
+    },
+    "time20_timestamp": {
+      "n_sources": 36000,
+      "first_scan_request_cutoff": 0.339002707276739,
+      "terminal_threshold": 0.2450995005562075,
+      "counts": {
+        "old": {
+          "first_only_n": 5843,
+          "second_only_n": 3803,
+          "first_only_chosen_correct": 5322,
+          "second_only_chosen_correct": 1643,
+          "requested_n": 10662,
+          "rescued_n": 748,
+          "lost_n": 263,
+          "all_two_net_correct_n": 1122
+        },
+        "new": {
+          "first_only_n": 5051,
+          "second_only_n": 3778,
+          "first_only_chosen_correct": 4511,
+          "second_only_chosen_correct": 1493,
+          "requested_n": 11149,
+          "rescued_n": 800,
+          "lost_n": 251,
+          "all_two_net_correct_n": 953
+        }
+      },
+      "results": {
+        "change_discordant_accuracy_pp": {
+          "estimate": -4.202924423915718,
+          "within_95": [
+            -5.472057770268658,
+            -2.976518091706815
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -6.097410327534277,
+            -2.249966958509269
+          ],
+          "class_valid_draws": 2000
+        },
+        "mix_pp": {
+          "estimate": -1.6433868722666916,
+          "within_95": [
+            -2.2189536517262165,
+            -1.0492223701581191
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -3.192453443514184,
+            -0.09371477561600378
+          ],
+          "class_valid_draws": 2000
+        },
+        "first_retention_pp": {
+          "estimate": -1.0449165018169093,
+          "within_95": [
+            -1.6784009037433913,
+            -0.3804350554380667
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -1.811095367449771,
+            -0.3106201913913771
+          ],
+          "class_valid_draws": 2000
+        },
+        "second_recovery_pp": {
+          "estimate": -1.5146210498321122,
+          "within_95": [
+            -2.3678715608753316,
+            -0.6518027462112804
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            -2.5901335193063955,
+            -0.44176256133068587
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_first_only_share_pct": {
+          "estimate": 60.57433132904831,
+          "within_95": [
+            59.7538619517967,
+            61.37709932933954
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            57.18401689852894,
+            63.934875084738465
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_first_retention_pct": {
+          "estimate": 91.08334759541331,
+          "within_95": [
+            90.3725342251407,
+            91.81796810060148
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            90.20894087409287,
+            91.92068818530153
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_second_recovery_pct": {
+          "estimate": 43.20273468314488,
+          "within_95": [
+            41.73864262154801,
+            44.69452199012272
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            40.727015012877,
+            45.706964618826895
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_discordant_accuracy_pct": {
+          "estimate": 72.20609579100146,
+          "within_95": [
+            71.3741929567968,
+            73.04910883957908
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            70.40348746712469,
+            73.95858031966443
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_net_correct_per_100_extra_directed": {
+          "estimate": 4.548865128493716,
+          "within_95": [
+            3.9962299599766116,
+            5.105386416861827
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            3.481522460642627,
+            5.66015666803869
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_net_correct_per_100_extra_uniform_expected": {
+          "estimate": 3.1166666666666667,
+          "within_95": [
+            2.8944444444444444,
+            3.3417361111111106
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            2.4943055555555556,
+            3.786249999999999
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_additional_net_per_100_vs_uniform": {
+          "estimate": 1.4321984618270496,
+          "within_95": [
+            1.011320920847427,
+            1.8845142392887717
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            0.8439801582765629,
+            2.0618869285891828
+          ],
+          "class_valid_draws": 2000
+        },
+        "old_share_of_always_two_incremental_gain_pct": {
+          "estimate": 43.22638146167558,
+          "within_95": [
+            39.221040928358,
+            47.33118215030081
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            38.246864321370644,
+            48.35702193932828
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_first_only_share_pct": {
+          "estimate": 57.209196964548646,
+          "within_95": [
+            56.23053598650272,
+            58.225750587303914
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            54.630380629956,
+            59.86705808239042
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_first_retention_pct": {
+          "estimate": 89.30904771332409,
+          "within_95": [
+            88.45079372992255,
+            90.16978846319178
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            88.29978074546541,
+            90.24161731536975
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_second_recovery_pct": {
+          "estimate": 39.518263631551086,
+          "within_95": [
+            38.024398985249576,
+            40.99687163804824
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            37.52427894890892,
+            41.450257601818336
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_discordant_accuracy_pct": {
+          "estimate": 68.00317136708574,
+          "within_95": [
+            67.05280161680298,
+            68.97926822451701
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            66.56725226562773,
+            69.47407416560321
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_net_correct_per_100_extra_directed": {
+          "estimate": 4.924208449188268,
+          "within_95": [
+            4.389043005079172,
+            5.484216938778186
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            4.0050278945939795,
+            5.7918912122500785
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_net_correct_per_100_extra_uniform_expected": {
+          "estimate": 2.647222222222222,
+          "within_95": [
+            2.4193750000000005,
+            2.875
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            2.1888888888888887,
+            3.0834027777777777
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_additional_net_per_100_vs_uniform": {
+          "estimate": 2.2769862269660455,
+          "within_95": [
+            1.8774701720859317,
+            2.7159721155907146
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            1.720612863257646,
+            2.8199736010223293
+          ],
+          "class_valid_draws": 2000
+        },
+        "new_share_of_always_two_incremental_gain_pct": {
+          "estimate": 57.60755508919203,
+          "within_95": [
+            53.15901272789818,
+            62.3583479917669
+          ],
+          "within_valid_draws": 2000,
+          "class_95": [
+            52.389876945149545,
+            63.14574057471089
+          ],
+          "class_valid_draws": 2000
+        }
+      }
+    }
+  }
+}

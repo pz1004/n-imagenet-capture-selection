@@ -127,7 +127,9 @@ def infer(args, directory):
     families = {args.cohort}
     if args.cohort == "full" and args.condition == "original":
         families.add("mini")
-    labels = {r["source_id"]: int(r["label"]) for r in csv_rows(DATA / "source_index.csv") if r["cohort"] in families}
+    study_sources = csv_rows(DATA / "source_index.csv")
+    labels = {r["source_id"]: int(r["label"]) for r in study_sources
+              if r["cohort"] in families and (args.split is None or r["split"] == args.split)}
     n_classes = 1000 if args.cohort == "full" else 100
     models = {k: classifier(getattr(args, k), k, releases["checkpoint", k], n_classes, args.device) for k in MODELS}
     with zipfile.ZipFile(args.archive) as archive:
@@ -163,22 +165,25 @@ def infer(args, directory):
             arr.flush()
     (directory/"settings.json").write_text(json.dumps({"cohort": args.cohort, "condition": args.condition,
         "crop": args.crop, "count": len(selected), "batch_size": args.batch_size, "device": str(args.device),
-        "torch": str(torch.__version__), "numpy": np.__version__, "source_id": args.source_id}, indent=2)+"\n")
+        "torch": str(torch.__version__), "numpy": np.__version__, "source_id": args.source_id, "split":args.split}, indent=2)+"\n")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("cohort", choices=("mini", "full"))
-    parser.add_argument("condition", choices=("original", "vertical", "horizontal"))
+    parser.add_argument("condition", choices=("original", "vertical", "horizontal", "variant1", "variant2"))
     parser.add_argument("crop", choices=("events30k", "time20"))
     parser.add_argument("--archive", type=Path, required=True)
     for model in MODELS:
         parser.add_argument("--"+model, type=Path, required=True, help=f"Official {model} checkpoint for this cohort")
     parser.add_argument("--output", type=Path, required=True, help="A new directory for the two logit arrays and their row mapping")
     parser.add_argument("--source-id", help="Optionally evaluate one synset/filename-stem")
+    parser.add_argument("--split", choices=("calibration", "test"), help="Process one frozen split in archive order")
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     args = parser.parse_args()
+    if args.condition in ("variant1", "variant2") and args.cohort != "full":
+        parser.error("The published variant 1 and 2 measurements use the full checkpoints")
     if args.output.exists() or args.batch_size < 1:
         parser.error("Specify a new output directory and a positive batch size")
     args.output.parent.mkdir(parents=True, exist_ok=True)

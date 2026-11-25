@@ -1,0 +1,40 @@
+{
+  "variant": "variant1",
+  "split": "calibration",
+  "n": 9000,
+  "registry_revision": "a7c6726b1a2e0f1b4ff9c8f4726c57cda0269146",
+  "archive_sha256": "84e5683d1b39ae2ef05045461f1e495e4b6ae768c9207e763ecb211608c1061f",
+  "references": {
+    "protocol_receipt_sha256": "bb9a30477c607dd972615e9cdc4c091b3bf8350331c723423153dba23d9af3eb",
+    "historical_lock_sha256": "e0b299d75a234867269d277f7a9016e558f9087aeb08afb8fae74600eb81aada",
+    "sha256_new_parity": "5678ab38556793e1a34c16d6f4cb1a603d2793b70f89ba2989d00d7764a07c50",
+    "forecast": null
+  },
+  "started_utc": "2026-11-25T13:39:33.369109+00:00",
+  "finished_utc": "2026-11-25T13:41:13.857413+00:00",
+  "elapsed_seconds": 103.09584513911977,
+  "model_kinds": [
+    "histogram",
+    "timestamp"
+  ],
+  "crop_windows": [
+    "events30k",
+    "time20"
+  ],
+  "cuda": "12.8",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "batch": 32,
+  "encoder_workers": 6,
+  "runner_sha256": "3279bade9e3ce056f8cf84d7e78060a9ad17c33fd5731428f0ee14170fc8c236",
+  "output_logits_recalculated": true,
+  "window_exceptions": [],
+  "outputs_sha256": {
+    "events30k/histogram.npy": "4d5906c598ad5a255dcecfa533c3b622968d10d037ddcff2795bda902e815eb4",
+    "events30k/predictions.csv": "78a2cfc9bc30fd06922e506dc4f6563f077f8b67773e4a94b30716d400ab7051",
+    "events30k/timestamp.npy": "44f1ec8463a2f4c8d9d28c95b196d47e9572dfb1cc6db393b07dffe2aaa62531",
+    "time20/histogram.npy": "ade8fb6e3e4b8e46dd8ae227a9a2c77572708823f7a0f66cb0ba5bcda1a7d439",
+    "time20/predictions.csv": "af3b035170d114f91b2c24c4c759fb083c705ca2032f7ed73c6baa4f80bdd46c",
+    "time20/timestamp.npy": "3dfd6d73badd41408244634cf35f7833858dbb89516d98c8c00b9be33b006676"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "estimands": [
+    "always two frozen minus first",
+    "directed minus random at original numerical 30% request gate"
+  ],
+  "method": "difference between trajectory pairs, transfer minus reference, in percentage points, with identical source or whole-class draws and fixed thresholds",
+  "results": {
+    "events30k_histogram": {
+      "transfer_minus_reference_pp": [
+        -0.5,
+        0.04162685185185183
+      ],
+      "old_subgroups": {
+        "first_only_n": 7688,
+        "second_only_n": 2949,
+        "first_only_chosen_correct": 6978,
+        "second_only_chosen_correct": 1274
+      },
+      "new_subgroups": {
+        "first_only_n": 6466,
+        "second_only_n": 2953,
+        "first_only_chosen_correct": 5779,
+        "second_only_chosen_correct": 1071
+      },
+      "within_95_pp": [
+        [
+          -0.8166666666666665,
+          -0.18604166666666705
+        ],
+        [
+          -0.1314507677469136,
+          0.2149708063271601
+        ]
+      ],
+      "class_95_pp": [
+        [
+          -0.9778472222222223,
+          -0.02777777777777779
+        ],
+        [
+          -0.1522058236882716,
+          0.23489395447530803
+        ]
+      ]
+    },
+    "time20_histogram": {
+      "transfer_minus_reference_pp": [
+        -0.8722222222222222,
+        -0.07317893518518503
+      ],
+      "old_subgroups": {
+        "first_only_n": 5482,
+        "second_only_n": 3757,
+        "first_only_chosen_correct": 4929,
+        "second_only_chosen_correct": 1702
+      },
+      "new_subgroups": {
+        "first_only_n": 5309,
+        "second_only_n": 3510,
+        "first_only_chosen_correct": 4761,
+        "second_only_chosen_correct": 1383
+      },
+      "within_95_pp": [
+        [
+          -1.1916666666666664,
+          -0.5611111111111118
+        ],
+        [
+          -0.24671121527777803,
+          0.11091399691358016
+        ]
+      ],
+      "class_95_pp": [
+        [
+          -1.5197222222222226,
+          -0.23881944444444442
+        ],
+        [
+          -0.27704665509259246,
+          0.1315762191358024
+        ]
+      ]
+    },
+    "events30k_timestamp": {
+      "transfer_minus_reference_pp": [
+        -0.21666666666666656,
+        0.08699513888888888
+      ],
+      "old_subgroups": {
+        "first_only_n": 8058,
+        "second_only_n": 2933,
+        "first_only_chosen_correct": 7408,
+        "second_only_chosen_correct": 1157
+      },
+      "new_subgroups": {
+        "first_only_n": 6226,
+        "second_only_n": 3061,
+        "first_only_chosen_correct": 5581,
+        "second_only_chosen_correct": 1074
+      },
+      "within_95_pp": [
+        [
+          -0.5166666666666666,
+          0.08611111111111103
+        ],
+        [
+          -0.08473788773148143,
+          0.24774052083333314
+        ]
+      ],
+      "class_95_pp": [
+        [
+          -0.6472222222222221,
+          0.2305555555555555
+        ],
+        [
+          -0.1023255729166666,
+          0.26553985918209877
+        ]
+      ]
+    },
+    "time20_timestamp": {
+      "transfer_minus_reference_pp": [
+        -0.46944444444444455,
+        0.28100054012345677
+      ],
+      "old_subgroups": {
+        "first_only_n": 5843,
+        "second_only_n": 3803,
+        "first_only_chosen_correct": 5322,
+        "second_only_chosen_correct": 1643
+      },
+      "new_subgroups": {
+        "first_only_n": 5051,
+        "second_only_n": 3778,
+        "first_only_chosen_correct": 4511,
+        "second_only_chosen_correct": 1493
+      },
+      "within_95_pp": [
+        [
+          -0.7805555555555559,
+          -0.16111111111111143
+        ],
+        [
+          0.10462529320987637,
+          0.4577079996141975
+        ]
+      ],
+      "class_95_pp": [
+        [
+          -1.047222222222222,
+          0.0889583333333335
+        ],
+        [
+          0.06310967592592615,
+          0.4850390528549374
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "variant": "variant1",
+  "split": "test",
+  "n": 36000,
+  "registry_revision": "a7c6726b1a2e0f1b4ff9c8f4726c57cda0269146",
+  "archive_sha256": "84e5683d1b39ae2ef05045461f1e495e4b6ae768c9207e763ecb211608c1061f",
+  "references": {
+    "protocol_receipt_sha256": "bb9a30477c607dd972615e9cdc4c091b3bf8350331c723423153dba23d9af3eb",
+    "historical_lock_sha256": "e0b299d75a234867269d277f7a9016e558f9087aeb08afb8fae74600eb81aada",
+    "sha256_new_parity": "5678ab38556793e1a34c16d6f4cb1a603d2793b70f89ba2989d00d7764a07c50",
+    "forecast": {
+      "file": "revision-transfer/forecast_receipt.json",
+      "sha256": "bbe8006218b42a7e010bc4e63ab861eecddecb67ac3cd2ddbe16bb0e9757179f",
+      "release_sha256": "13ddeab65c546d0d9f46e1bb619d72a1b4008947b8d78ff70e5610a979c18262",
+      "release_utc": "2026-11-25T13:42:54.973616+00:00"
+    }
+  },
+  "started_utc": "2026-11-25T13:42:58.438794+00:00",
+  "finished_utc": "2026-11-25T13:46:36.738111+00:00",
+  "elapsed_seconds": 226.2161641898565,
+  "model_kinds": [
+    "histogram",
+    "timestamp"
+  ],
+  "crop_windows": [
+    "events30k",
+    "time20"
+  ],
+  "cuda": "12.8",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "batch": 32,
+  "encoder_workers": 6,
+  "runner_sha256": "3279bade9e3ce056f8cf84d7e78060a9ad17c33fd5731428f0ee14170fc8c236",
+  "output_logits_recalculated": true,
+  "window_exceptions": [],
+  "outputs_sha256": {
+    "events30k/histogram.npy": "120a84a350e30e45f45895574b131ee8cc66157943b8e7cbae2eb7d2bada7f4d",
+    "events30k/predictions.csv": "252707bd3629754e61c68193ec7ceae061baa11fb730de56c08c2999dd88426f",
+    "events30k/timestamp.npy": "05f727c1b85f0f39e733f615b172ee12fc99981825257c6503d6e82fae9ceb9f",
+    "time20/histogram.npy": "8ed90628797a49a63ca124ada3bd5eb1db53a4f7b199f9209fc7f33da48400b9",
+    "time20/predictions.csv": "716dd0e3dd40d95e58bcee4e4c5f9a16490badb7784fab53de1015d647f8c11d",
+    "time20/timestamp.npy": "5aeb6f9fb547911813aafad5ed74928f11abeca5891db8039fdf5348597950cd"
+  }
+}

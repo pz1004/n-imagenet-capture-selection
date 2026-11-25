@@ -1,0 +1,44 @@
+{
+  "utc": "2026-11-25T12:51:49.416558+00:00",
+  "revision": "a7c6726b1a2e0f1b4ff9c8f4726c57cda0269146",
+  "protocol_receipt_sha256": "bb9a30477c607dd972615e9cdc4c091b3bf8350331c723423153dba23d9af3eb",
+  "checkpoints": {
+    "histogram": {
+      "weight_sha256": "be0191be61aa77b0ecee98147a0a8212279d9a259f5c0e5b4926a9a573d520c6",
+      "original_n": 50000,
+      "original_correct": 23662,
+      "original_published_accuracy_pct": 47.73
+    },
+    "timestamp": {
+      "weight_sha256": "8ed1e57df046a8a824317314c19a4a9d21ee91694eff9a5ae93cd818a27a8ca4",
+      "original_n": 50000,
+      "original_correct": 22977,
+      "original_published_accuracy_pct": 45.86
+    }
+  },
+  "original_cpu_parity_cases": 12,
+  "variants": [
+    {
+      "variant": "variant1",
+      "official_ids_matched": 50000,
+      "catalog_metadata_sha256": "14f99b096aa0da7245e9a14155fe5cb732d16296f433c22c93b6d698681f87b0",
+      "calibration_probe_ids": [
+        "n01860187/ILSVRC2012_val_00033823",
+        "n03297495/ILSVRC2012_val_00039493",
+        "n15075141/ILSVRC2012_val_00006953"
+      ]
+    },
+    {
+      "variant": "variant2",
+      "official_ids_matched": 50000,
+      "catalog_metadata_sha256": "34793caf59b5ef14c077e835c2849e9feb407a88444295a3f405cc6c76125eb4",
+      "calibration_probe_ids": [
+        "n01860187/ILSVRC2012_val_00033823",
+        "n03297495/ILSVRC2012_val_00039493",
+        "n15075141/ILSVRC2012_val_00006953"
+      ]
+    }
+  ],
+  "calibration_sources": 9000,
+  "test_sources": 36000
+}

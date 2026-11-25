@@ -1,0 +1,7 @@
+{
+  "release_utc": "2026-11-25T13:42:54.973616+00:00",
+  "forecast_path": "results/gain/forecast.json",
+  "forecast_sha256": "5131ae664d105e6e3640a9c0515ccb3fa90ad05fdb71a1cd3fa3f2b4c7794667",
+  "receipt_sha256": "bbe8006218b42a7e010bc4e63ab861eecddecb67ac3cd2ddbe16bb0e9757179f",
+  "independent_calibration_check_sha256": "4563f3a6a0aacba4dad090d02cb88fd93fcec6738d943e518600715a50bc04e5"
+}

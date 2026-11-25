@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-11-25T13:42:53.769774+00:00",
+  "forecast_file": "results/gain/forecast.json",
+  "forecast_sha256": "5131ae664d105e6e3640a9c0515ccb3fa90ad05fdb71a1cd3fa3f2b4c7794667",
+  "draws_file": "results/gain/forecast_draws.npz",
+  "draws_sha256": "0e50f0fa381dcf6713a7b318096ee1a9188bb42ee7c571426bc0f0b5a68838d5",
+  "frozen_protocol_sha256": "de8934377f52c7396f7ad463c67a3a5a2295697c58bb538af5f492fe5ddb818a"
+}
