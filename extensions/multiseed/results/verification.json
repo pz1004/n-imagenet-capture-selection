@@ -1,0 +1,47 @@
+{
+  "verified_paths": {
+    "variant1": {
+      "receipt_sha256": "e838509348b6e54a14e50a5557422602d568bffcf229e72e074ac40a85d45da6",
+      "verified_score_rows": 40500,
+      "seeds": 5
+    },
+    "variant2": {
+      "receipt_sha256": "f1424c320b15d7dc6bde3d19966c008b0505e915d3fa68e509f9b4caa28931bc",
+      "verified_score_rows": 40500,
+      "seeds": 5
+    },
+    "original": {
+      "receipt_sha256": "18b75e1404022ccfebe0e7654a0cd859051e8886eaa78bfaca7e792e2828d468",
+      "verified_score_rows": 40500,
+      "seeds": 5
+    },
+    "vertical": {
+      "receipt_sha256": "3fa780ff878cc8af2fb0a012eed8911d0ebcb177188078d78cab07b2e8d13291",
+      "verified_score_rows": 4500,
+      "seeds": 5
+    },
+    "horizontal": {
+      "receipt_sha256": "0575277dee35fc42d83cf75e8a1556c64980b55565e80226a189b8e86d5cf91a",
+      "verified_score_rows": 4500,
+      "seeds": 5
+    }
+  },
+  "checked_outputs": {
+    "bootstrap_within.npy": "a162900182ab0e5cc04ed541e4f083657b9c54e255611e85fdf5f50ebf938aac",
+    "policy_sweep.csv": "1a12fb163dab7d32d1e516bb3a11eab0f76fcf3b0f93b2b6115c24a09c3093e3",
+    "paired.json": "04f70d0e3d34c7f90e17c0f4ff45c5bc037df9b4b18b7a820aebfd20ee1720bd",
+    "decisions_seed4.csv.gz": "e89f486ed5d8dfe666a08b307a517b46ff188d049051f84d3ea1cf89defbc4c7",
+    "decisions_seed3.csv.gz": "0859ba7bdbc936d4c94139bd42a641d8f7b737096d5034d81d85561694516514",
+    "bootstrap_class.npy": "21d41044c6aac6ad2a37a13d798a3aa4a1505ef19b9a1816684c7d82c4b68ade",
+    "decisions_seed1.csv.gz": "912b39a9010169b511c987522dd1dbe65ca12b02f18782586296bb4d3d3a6a2f",
+    "point_estimates.json": "cf31d16d1fea2d45067e3dd61fbf6f1d3bcde46b066af139edd8080e9235c0cb",
+    "decisions_seed5.csv.gz": "53a17a04769eb540433f965746dae76487785512325cd10131c1d5df3f204e82",
+    "decisions_seed0.csv.gz": "8b72df05eccb61a0c3132c6bf02cc02e3a3dec152411bdad1633081916e08e7e",
+    "by_seed.json": "a8f77f7bb6a59907e0063c7af7a784617a89c25d2d52df544f548393b1c2014d",
+    "decisions_seed2.csv.gz": "fe7f3dd7ee0d1f14d137c3e50b6ca53e38aa2827c5bb3fa91c54be9928aaa74d"
+  },
+  "verified_decisions": 1080000,
+  "bootstrap_draws_each": 2000,
+  "independent_quota_top1_replay": true,
+  "signed_gain_identity": true
+}

@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-11-26T03:44:18.428492+00:00",
+  "completed_utc": "2026-11-26T03:46:06.048785+00:00",
+  "split": "calibration",
+  "sources": 9000,
+  "inputs": {
+    "protocol_sha256": "8d87ca4328a04effb8b01aca0b9a92aaa236daaeab1e4d294fd83da69d0b2f6c",
+    "audit_sha256": "b3b6c0fd882c8c4dabb9e295deeac52559370c5fdeed84d218cd5e040bd66c4c"
+  },
+  "archive_sha256": "fb10f2db81f4a9ae0147997bb51e6625786d437363173744607c7cca7fdf3615",
+  "device": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "numpy": "2.5.4",
+  "batch": 32,
+  "crop": "events30k",
+  "window_exceptions": [],
+  "runner_sha256": "7c7cb37d23f6918ba1bdb1e66584bd212c2773d55f551b72eaa286a26249ba9b",
+  "all_logits_checked": true,
+  "outputs_sha256": {
+    "histogram.npy": "36f1df56816821d0eafeee6be528acb3229d2afc4fc02015c82f1027bc67032b",
+    "predictions.csv": "37b973e84080a462dd0c44afce31d26c83f97d6c210552a6f412dc6508ff5243",
+    "timestamp.npy": "8f0115f042757dfdcd27a97572e7831bc1e45c085c386274fdc4dd872c66054d"
+  }
+}

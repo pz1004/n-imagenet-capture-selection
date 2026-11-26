@@ -1,0 +1,40 @@
+{
+  "checks": {
+    "histogram": {
+      "test_decisions": 36000,
+      "arms": 12,
+      "matched_path_contrasts": 12,
+      "quota_primary_ci95_reconstructed": {
+        "within": [
+          1.6027777777777779,
+          2.058333333333333
+        ],
+        "class": [
+          1.488888888888889,
+          2.1667361111111108
+        ]
+      }
+    },
+    "timestamp": {
+      "test_decisions": 36000,
+      "arms": 12,
+      "matched_path_contrasts": 12,
+      "quota_primary_ci95_reconstructed": {
+        "within": [
+          1.3694444444444445,
+          1.8445138888888886
+        ],
+        "class": [
+          1.2860416666666667,
+          1.95
+        ]
+      }
+    }
+  },
+  "chronology_utc": {
+    "protocol": "2026-11-26T03:20:15.232152+00:00",
+    "calibration_freeze": "2026-11-26T03:46:07.029774+00:00",
+    "test_start": "2026-11-26T03:46:08.401606+00:00",
+    "test_end": "2026-11-26T03:48:27.594384+00:00"
+  }
+}

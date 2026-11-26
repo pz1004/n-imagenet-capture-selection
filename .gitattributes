@@ -8,3 +8,6 @@ provenance/** -text -eol
 extensions/**/*.csv -text -eol whitespace=trailing-space,space-before-tab,cr-at-eol
 extensions/**/*.json -text -eol
 extensions/**/*.gz binary
+extensions/**/*.npy binary
+extensions/**/*.npz binary
+extensions/variant5/PROTOCOL.md -text -eol

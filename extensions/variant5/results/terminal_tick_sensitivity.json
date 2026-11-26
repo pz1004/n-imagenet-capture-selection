@@ -1,0 +1,32 @@
+{
+  "cpu_probe": [
+    {
+      "source_id": "n03095699/ILSVRC2012_val_00049475",
+      "model": "histogram",
+      "raw_crop_class": 408,
+      "full_time_sort_class": 408,
+      "max_logit_difference": 0.032672762870788574
+    },
+    {
+      "source_id": "n03095699/ILSVRC2012_val_00049475",
+      "model": "timestamp",
+      "raw_crop_class": 833,
+      "full_time_sort_class": 833,
+      "max_logit_difference": 0.007638454437255859
+    },
+    {
+      "source_id": "n04606251/ILSVRC2012_val_00047231",
+      "model": "histogram",
+      "raw_crop_class": 525,
+      "full_time_sort_class": 525,
+      "max_logit_difference": 0.04632854461669922
+    },
+    {
+      "source_id": "n04606251/ILSVRC2012_val_00047231",
+      "model": "timestamp",
+      "raw_crop_class": 525,
+      "full_time_sort_class": 525,
+      "max_logit_difference": 0.004398345947265625
+    }
+  ]
+}

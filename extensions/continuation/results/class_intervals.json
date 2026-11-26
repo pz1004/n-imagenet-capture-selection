@@ -1,0 +1,482 @@
+{
+  "cutoff.all.requests_pct": [
+    28.608333333333334,
+    30.902847222222224
+  ],
+  "cutoff.all.first.acc": [
+    40.45527777777778,
+    42.925069444444446
+  ],
+  "cutoff.all.second.accept.acc": [
+    42.39993055555556,
+    44.93340277777777
+  ],
+  "cutoff.all.second.accept.gain": [
+    1.7027777777777777,
+    2.263958333333333
+  ],
+  "cutoff.all.second.select.acc": [
+    42.64402777777778,
+    45.17791666666667
+  ],
+  "cutoff.all.second.select.gain": [
+    1.9694444444444446,
+    2.4916666666666667
+  ],
+  "cutoff.all.second.average.acc": [
+    42.827638888888885,
+    45.35590277777778
+  ],
+  "cutoff.all.second.average.gain": [
+    2.1666666666666665,
+    2.6694444444444443
+  ],
+  "cutoff.all.horizontal.accept.acc": [
+    40.72222222222223,
+    43.33895833333333
+  ],
+  "cutoff.all.horizontal.accept.gain": [
+    -0.011180555555555551,
+    0.6888888888888889
+  ],
+  "cutoff.all.horizontal.select.acc": [
+    41.43604166666667,
+    44.016736111111115
+  ],
+  "cutoff.all.horizontal.select.gain": [
+    0.7944444444444444,
+    1.2666666666666666
+  ],
+  "cutoff.all.horizontal.average.acc": [
+    41.40270833333333,
+    43.99173611111111
+  ],
+  "cutoff.all.horizontal.average.gain": [
+    0.7027083333333333,
+    1.3388888888888888
+  ],
+  "cutoff.all.square.accept.acc": [
+    44.02472222222222,
+    46.577777777777776
+  ],
+  "cutoff.all.square.accept.gain": [
+    3.199930555555556,
+    3.991736111111111
+  ],
+  "cutoff.all.square.select.acc": [
+    44.03020833333333,
+    46.602777777777774
+  ],
+  "cutoff.all.square.select.gain": [
+    3.2472222222222222,
+    4.008333333333334
+  ],
+  "cutoff.all.square.average.acc": [
+    44.28604166666667,
+    46.89743055555555
+  ],
+  "cutoff.all.square.average.gain": [
+    3.5527083333333334,
+    4.288888888888889
+  ],
+  "cutoff.all.pooled.accept.acc": [
+    40.56930555555555,
+    43.050069444444446
+  ],
+  "cutoff.all.pooled.accept.gain": [
+    -0.18055555555555555,
+    0.41673611111111075
+  ],
+  "cutoff.all.square.select-second.select": [
+    1.0527777777777771,
+    1.7277777777777814
+  ],
+  "cutoff.all.horizontal.select-second.select": [
+    -1.5277777777777786,
+    -0.9165972222222204
+  ],
+  "cutoff.all.square.select-pooled.accept": [
+    3.0500000000000043,
+    3.9777777777777814
+  ],
+  "cutoff.all.pooled.accept-second.select": [
+    -2.4638888888888886,
+    -1.7971527777777803
+  ],
+  "cutoff.all.square.select-horizontal.select": [
+    2.1943749999999986,
+    3.0388888888888914
+  ],
+  "cutoff.all.square.accept-second.accept": [
+    1.2777777777777786,
+    1.9556249999999997
+  ],
+  "cutoff.all.square.average-second.average": [
+    1.174930555555553,
+    1.8249999999999957
+  ],
+  "cutoff.all.horizontal.average-second.average": [
+    -1.7416666666666671,
+    -1.0583333333333371
+  ],
+  "cutoff.common.requests_pct": [
+    28.641089979040245,
+    30.929273489599026
+  ],
+  "cutoff.common.first.acc": [
+    40.33876996882915,
+    42.79135826741728
+  ],
+  "cutoff.common.second.accept.acc": [
+    42.36750215558552,
+    44.88183238990716
+  ],
+  "cutoff.common.second.accept.gain": [
+    1.7564838289610984,
+    2.3401025390261365
+  ],
+  "cutoff.common.second.select.acc": [
+    42.586384337068864,
+    45.153190418327185
+  ],
+  "cutoff.common.second.select.gain": [
+    2.032419229999233,
+    2.5738815435824116
+  ],
+  "cutoff.common.second.average.acc": [
+    42.787374378898875,
+    45.342711483085225
+  ],
+  "cutoff.common.second.average.gain": [
+    2.2352913605029805,
+    2.754062637731662
+  ],
+  "cutoff.common.horizontal.accept.acc": [
+    40.624268467801684,
+    43.290514817476215
+  ],
+  "cutoff.common.horizontal.accept.gain": [
+    0.02584081373569349,
+    0.7369878300107717
+  ],
+  "cutoff.common.horizontal.select.acc": [
+    41.346924540861025,
+    43.951937673420524
+  ],
+  "cutoff.common.horizontal.select.gain": [
+    0.8246050403506092,
+    1.3067949293369696
+  ],
+  "cutoff.common.horizontal.average.acc": [
+    41.33381568806776,
+    43.96735120523732
+  ],
+  "cutoff.common.horizontal.average.gain": [
+    0.7457387931457881,
+    1.3907257371330968
+  ],
+  "cutoff.common.square.accept.acc": [
+    43.990456055351466,
+    46.52533008824993
+  ],
+  "cutoff.common.square.accept.gain": [
+    3.2497481961321277,
+    4.0714064229160405
+  ],
+  "cutoff.common.square.select.acc": [
+    44.00709769916314,
+    46.56515603312923
+  ],
+  "cutoff.common.square.select.gain": [
+    3.287196045776584,
+    4.089382440235212
+  ],
+  "cutoff.common.square.average.acc": [
+    44.24265914602601,
+    46.871971203632754
+  ],
+  "cutoff.common.square.average.gain": [
+    3.615351136163068,
+    4.370476699847113
+  ],
+  "cutoff.common.pooled.accept.acc": [
+    40.427781707595216,
+    42.947900036649486
+  ],
+  "cutoff.common.pooled.accept.gain": [
+    -0.18716615399199923,
+    0.4263940832238515
+  ],
+  "cutoff.common.square.select-second.select": [
+    1.0406627561722792,
+    1.73186379953133
+  ],
+  "cutoff.common.horizontal.select-second.select": [
+    -1.5827431145157147,
+    -0.949192114411254
+  ],
+  "cutoff.common.square.select-pooled.accept": [
+    3.107742161091849,
+    4.064594627664429
+  ],
+  "cutoff.common.pooled.accept-second.select": [
+    -2.5538661929184623,
+    -1.8670502303472984
+  ],
+  "cutoff.common.square.select-horizontal.select": [
+    2.2014904475636725,
+    3.0903814753303926
+  ],
+  "cutoff.common.square.accept-second.accept": [
+    1.2711500317090547,
+    1.9653444716165662
+  ],
+  "cutoff.common.square.average-second.average": [
+    1.1604253961440458,
+    1.8246271655893829
+  ],
+  "cutoff.common.horizontal.average-second.average": [
+    -1.7801696761360035,
+    -1.0805782020168226
+  ],
+  "quota.all.requests_pct": [
+    30.0,
+    30.0
+  ],
+  "quota.all.first.acc": [
+    40.45527777777778,
+    42.925069444444446
+  ],
+  "quota.all.second.accept.acc": [
+    42.40833333333334,
+    44.93333333333333
+  ],
+  "quota.all.second.accept.gain": [
+    1.7221527777777779,
+    2.2694444444444444
+  ],
+  "quota.all.second.select.acc": [
+    42.658055555555556,
+    45.211388888888884
+  ],
+  "quota.all.second.select.gain": [
+    1.9972222222222222,
+    2.5027777777777778
+  ],
+  "quota.all.second.average.acc": [
+    42.827708333333334,
+    45.38354166666666
+  ],
+  "quota.all.second.average.gain": [
+    2.1972222222222224,
+    2.6666666666666665
+  ],
+  "quota.all.horizontal.accept.acc": [
+    40.7,
+    43.35027777777778
+  ],
+  "quota.all.horizontal.accept.gain": [
+    -0.016666666666666666,
+    0.6973611111111103
+  ],
+  "quota.all.horizontal.select.acc": [
+    41.43881944444445,
+    44.02236111111112
+  ],
+  "quota.all.horizontal.select.gain": [
+    0.8082638888888889,
+    1.275
+  ],
+  "quota.all.horizontal.average.acc": [
+    41.39993055555556,
+    44.01388888888889
+  ],
+  "quota.all.horizontal.average.gain": [
+    0.7083333333333334,
+    1.3416666666666666
+  ],
+  "quota.all.square.accept.acc": [
+    44.03874999999999,
+    46.599999999999994
+  ],
+  "quota.all.square.accept.gain": [
+    3.2415972222222225,
+    4.0
+  ],
+  "quota.all.square.select.acc": [
+    44.06666666666667,
+    46.6167361111111
+  ],
+  "quota.all.square.select.gain": [
+    3.283333333333333,
+    4.016666666666667
+  ],
+  "quota.all.square.average.acc": [
+    44.33604166666667,
+    46.914097222222225
+  ],
+  "quota.all.square.average.gain": [
+    3.602777777777778,
+    4.286180555555555
+  ],
+  "quota.all.pooled.accept.acc": [
+    40.56097222222222,
+    43.041736111111106
+  ],
+  "quota.all.pooled.accept.gain": [
+    -0.17777777777777778,
+    0.4083333333333333
+  ],
+  "quota.all.square.select-second.select": [
+    1.0638194444444458,
+    1.7416666666666671
+  ],
+  "quota.all.horizontal.select-second.select": [
+    -1.5333333333333314,
+    -0.933194444444442
+  ],
+  "quota.all.square.select-pooled.accept": [
+    3.119444444444447,
+    3.9611111111111086
+  ],
+  "quota.all.pooled.accept-second.select": [
+    -2.4556250000000004,
+    -1.8388888888888886
+  ],
+  "quota.all.square.select-horizontal.select": [
+    2.219374999999997,
+    3.0418055555555523
+  ],
+  "quota.all.square.accept-second.accept": [
+    1.2944444444444443,
+    1.9638888888888886
+  ],
+  "quota.all.square.average-second.average": [
+    1.1944444444444429,
+    1.81944444444445
+  ],
+  "quota.all.horizontal.average-second.average": [
+    -1.7444444444444402,
+    -1.0694444444444429
+  ],
+  "quota.common.requests_pct": [
+    29.929906132625735,
+    30.127328763749144
+  ],
+  "quota.common.first.acc": [
+    40.33876996882915,
+    42.79135826741728
+  ],
+  "quota.common.second.accept.acc": [
+    42.3662038446305,
+    44.88669507086412
+  ],
+  "quota.common.second.accept.gain": [
+    1.7749722282926497,
+    2.344509264151201
+  ],
+  "quota.common.second.select.acc": [
+    42.612960241652075,
+    45.180443399544174
+  ],
+  "quota.common.second.select.gain": [
+    2.058417906066142,
+    2.5846253297993713
+  ],
+  "quota.common.second.average.acc": [
+    42.81802583301919,
+    45.383361252255796
+  ],
+  "quota.common.second.average.gain": [
+    2.2692445463088076,
+    2.752880075080048
+  ],
+  "quota.common.horizontal.accept.acc": [
+    40.60415936872594,
+    43.29285242600344
+  ],
+  "quota.common.horizontal.accept.gain": [
+    0.017291487109337013,
+    0.7442534334373748
+  ],
+  "quota.common.horizontal.select.acc": [
+    41.351520848315864,
+    43.95053939053894
+  ],
+  "quota.common.horizontal.select.gain": [
+    0.8312838944645294,
+    1.312478707391048
+  ],
+  "quota.common.horizontal.average.acc": [
+    41.31965777284016,
+    43.9865809254501
+  ],
+  "quota.common.horizontal.average.gain": [
+    0.749967441079024,
+    1.3936882432721343
+  ],
+  "quota.common.square.accept.acc": [
+    44.004281505645274,
+    46.55838563891011
+  ],
+  "quota.common.square.accept.gain": [
+    3.2990687909339775,
+    4.068248638916602
+  ],
+  "quota.common.square.select.acc": [
+    44.024714490715375,
+    46.58137492419029
+  ],
+  "quota.common.square.select.gain": [
+    3.3442951489402506,
+    4.092019311020058
+  ],
+  "quota.common.square.average.acc": [
+    44.31581924379564,
+    46.904232434122825
+  ],
+  "quota.common.square.average.gain": [
+    3.6843743834096503,
+    4.367373410676297
+  ],
+  "quota.common.pooled.accept.acc": [
+    40.41564796806351,
+    42.938472068468855
+  ],
+  "quota.common.pooled.accept.gain": [
+    -0.1869853337205223,
+    0.4170673678826604
+  ],
+  "quota.common.square.select-second.select": [
+    1.0443929981180329,
+    1.7429190578207996
+  ],
+  "quota.common.horizontal.select-second.select": [
+    -1.5794223889005812,
+    -0.9607281487659413
+  ],
+  "quota.common.square.select-pooled.accept": [
+    3.1760597581502967,
+    4.038058594380046
+  ],
+  "quota.common.pooled.accept-second.select": [
+    -2.548200955464577,
+    -1.9059164915028945
+  ],
+  "quota.common.square.select-horizontal.select": [
+    2.2266876138545824,
+    3.0905154900885212
+  ],
+  "quota.common.square.accept-second.accept": [
+    1.2873668762388415,
+    1.968180794199196
+  ],
+  "quota.common.square.average-second.average": [
+    1.185750894207159,
+    1.8247611970019653
+  ],
+  "quota.common.horizontal.average-second.average": [
+    -1.7807031160796456,
+    -1.0970430873965231
+  ]
+}

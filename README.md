@@ -4,6 +4,29 @@ When does a second physical scan improve recognition, and can the first scan ide
 
 The Mini N-ImageNet pilot used 100 classes. The confirmation used the remaining 900 classes, with 9,000 images for cutoff calibration and selector fitting and 36,000 for evaluation. With Event Histogram and up to 30,000 events per capture, confidence ranked the correct scan higher in 75.61% of vertical-only successes and 68.33% of horizontal-only successes. The equally weighted mean was 71.97%. Across all 36,000 images, selecting the more confident scan corrected 2,015 errors and lost 1,875 correct predictions relative to always using the vertical scan. Accuracy rose from 37.08% to 37.47%.
 
+## Scan order, motion setting and continuation in v1.2.0
+
+The [v1.2.0 results download](https://github.com/pz1004/n-imagenet-capture-selection/releases/download/v1.2.0/capture-selection-results-v1.2.0.zip) collects the numerical summaries for these four comparisons. The repository also contains the source-level inputs, decisions and replay code.
+
+| Analysis | Result on the 36,000 evaluation photographs |
+|---|---|
+| [Scan order](extensions/scan_order/README.md) | With 10,800 extra scans, square first and optional vertical reached 48.49%. Reversing the order reached 46.63%, even though adding square yielded the larger gain over vertical alone. |
+| [Variant 5](extensions/variant5/README.md) | On identical requests after reference vertical, accepting the 6 mm square instead of horizontal improved Event Histogram accuracy by 1.83 points. The original 3 mm square gained a further 3.40 points. Timestamp Image gave the same ordering. |
+| [Chronological continuation](extensions/continuation/README.md) | With 10,683 requests, selecting between consecutive vertical blocks reached 43.99%, switching to horizontal reached 42.77%, and switching to the original square reached 45.36%. Mean observed event spans per photograph were 18.83, 19.06 and 19.13 ms, respectively. |
+| [Five adaptation runs](extensions/multiseed/README.md) | At a 30% quota, adaptation increased the gain from horizontal rescans over each model's own vertical first scan by 1.21 points on average. With locally fitted selectors, the square follow-up's advantage over horizontal fell from 2.76 points to 0.85. |
+
+The scan-order, continuation and adaptation analyses reuse previously examined recordings. For variant 5, the photographs and published benchmark accuracies were known; the [protocol and request rules](extensions/variant5/README.md) were fixed before inference on the new test recordings. All four analyses use the original class-balanced source assignments. Capture counts and observed event spans come from offline replay. Hardware switching time and energy were unmeasured.
+
+Install the CPU dependencies with `python -m pip install -r requirements.txt`. The following commands run from the repository root on Python 3.11 or later. The first command checks the released requests and accuracy counts directly. The loop refits all policies and computes both sets of 2,000-draw intervals. The final check compares those outputs against the published results. Unix shells are shown below. Windows users can run each Python command separately with the same arguments.
+
+```sh
+python analysis/verify_acquisition.py
+for comparison in scan_order variant5 continuation multiseed; do
+  OPENBLAS_NUM_THREADS=1 python "extensions/$comparison/replay.py" --output "runs/$comparison"
+done
+python analysis/verify_acquisition.py --replayed runs
+```
+
 ## Adaptation and follow-up path comparisons in v1.1.0
 
 These analyses reuse the 36,000 previously evaluated test photographs. Each asks what an optional second capture adds after a prescribed vertical pass. The cost measure is the number of captures in offline replay.

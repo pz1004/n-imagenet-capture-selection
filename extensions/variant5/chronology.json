@@ -1,0 +1,18 @@
+{
+  "chronology_utc": {
+    "protocol": "2026-11-26T03:20:15.232152+00:00",
+    "calibration_freeze": "2026-11-26T03:46:07.029774+00:00",
+    "test_start": "2026-11-26T03:46:08.401606+00:00",
+    "test_end": "2026-11-26T03:48:27.594384+00:00"
+  },
+  "original_calibration_freeze_sha256": "d15b476e61bab2beb7d0b0429235684a58896f7fcf4b793458e1966a434b605e",
+  "original_calibration_predictions_sha256": "37b973e84080a462dd0c44afce31d26c83f97d6c210552a6f412dc6508ff5243",
+  "original_test_predictions_sha256": "f711d898b00a87fc7dc6dda277186400d20df5fbb3a31e804f9ba70d4bb5d69d",
+  "sha256": {
+    "PROTOCOL.md": "8d87ca4328a04effb8b01aca0b9a92aaa236daaeab1e4d294fd83da69d0b2f6c",
+    "calibration_rules.json": "07c213264daa7e124ef84eeb2724df4f6772188b7d2a709a443e57ea9d292393",
+    "input_checks.json": "b3b6c0fd882c8c4dabb9e295deeac52559370c5fdeed84d218cd5e040bd66c4c",
+    "calibration_inference.json": "d4337398c1a303adfd87fb2344e07c4def8c0bfd550e608de1f63d78b8b99fc3",
+    "test_inference.json": "27820f71ae89860bc398913b83bc3b2850a0d824641b59a753e3c5faca240412"
+  }
+}

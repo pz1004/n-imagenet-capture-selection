@@ -17,6 +17,13 @@ from torchvision.models import resnet34
 DATA = Path(__file__).resolve().parents[1] / "data"
 MODELS = ("histogram", "timestamp")
 METADATA = ("raw_events", "used_events", "first_used_us", "last_used_us", "zero_span")
+# For these records the last tick is out of order, after both selected windows.
+# Keep the full recorded length when computing the hash-based start.
+TERMINAL_TICKS = {
+    "n04458633/ILSVRC2012_val_00049132": (142449, 46703, 436),
+    "n03095699/ILSVRC2012_val_00049475": (83291, 33558, 2792),
+    "n04606251/ILSVRC2012_val_00047231": (131864, 48142, 879),
+}
 
 
 def hashed(seed_text):
@@ -42,6 +49,18 @@ def recording_key(name):
     return match.group(1) + "/" + p.stem
 
 
+def channel_indices(ev, key):
+    if np.any(ev["x"] >= 640) or np.any(ev["y"] >= 480) or np.any(ev["x"] < 0) or np.any(ev["y"] < 0):
+        raise ValueError(f"Sensor coordinates outside 640x480: {key}")
+    p = np.asarray(ev["p"])
+    if not np.all(np.isin(p, (-1, 0, 1))):
+        raise ValueError(f"Unexpected polarity values: {key}")
+    x = (ev["x"].astype(np.float64) * (224 / 640)).astype(np.int64)
+    y = (ev["y"].astype(np.float64) * (224 / 480)).astype(np.int64)
+    # Channel 0 is ON, channel 1 is OFF, exactly as in the authors' loader.
+    return x + 224 * y + (p <= 0).astype(np.int64) * (224 * 224)
+
+
 def inputs(blob, key, crop):
     with np.load(io.BytesIO(blob), allow_pickle=False) as sample:
         ev = sample["event_data"].reshape(-1)
@@ -49,13 +68,10 @@ def inputs(blob, key, crop):
     if not n:
         raise ValueError(f"Empty raw recording: {key}")
     raw_t = ev["t"].astype(np.int64)
-    # One verified full vertical recording has an out-of-order final timestamp.
-    # Both planned windows end before that event. Keep its original length for the crop hash.
     drops = np.flatnonzero(raw_t[1:] < raw_t[:-1]) + 1
     if drops.size:
-        known = (key == "n04458633/ILSVRC2012_val_00049132" and n == 142449
-                 and drops.tolist() == [n-1] and ev["t"].dtype == np.dtype("<u2")
-                 and tuple(raw_t[-2:]) == (46703, 436))
+        known = (drops.tolist() == [n-1] and ev["t"].dtype == np.dtype("<u2")
+                 and (n, *raw_t[-2:]) == TERMINAL_TICKS.get(key))
         if not known:
             raise ValueError(f"Unexpected timestamp discontinuity: {key}")
     if crop == "events30k":
@@ -73,15 +89,7 @@ def inputs(blob, key, crop):
     ev = ev[start:stop]
     t = raw_t[start:stop]
     span = int(t[-1] - t[0])
-    if np.any(ev["x"] >= 640) or np.any(ev["y"] >= 480) or np.any(ev["x"] < 0) or np.any(ev["y"] < 0):
-        raise ValueError(f"Sensor coordinates outside 640x480: {key}")
-    p = np.asarray(ev["p"])
-    if not np.all(np.isin(p, (-1, 0, 1))):
-        raise ValueError(f"Unexpected polarity values: {key}")
-    x = (ev["x"].astype(np.float64) * (224 / 640)).astype(np.int64)
-    y = (ev["y"].astype(np.float64) * (224 / 480)).astype(np.int64)
-    # Channel 0 is ON, channel 1 is OFF, exactly as in the authors' loader.
-    idx = x + 224 * y + (p <= 0).astype(np.int64) * (224 * 224)
+    idx = channel_indices(ev, key)
     length = 2 * 224 * 224
     count = np.bincount(idx, minlength=length).astype(np.float32)
     surface = np.zeros(length, dtype=np.float32)
@@ -171,7 +179,7 @@ def infer(args, directory):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("cohort", choices=("mini", "full"))
-    parser.add_argument("condition", choices=("original", "vertical", "horizontal", "variant1", "variant2"))
+    parser.add_argument("condition", choices=("original", "vertical", "horizontal", "variant1", "variant2", "variant5"))
     parser.add_argument("crop", choices=("events30k", "time20"))
     parser.add_argument("--archive", type=Path, required=True)
     for model in MODELS:
@@ -182,8 +190,8 @@ def main():
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     args = parser.parse_args()
-    if args.condition in ("variant1", "variant2") and args.cohort != "full":
-        parser.error("The published variant 1 and 2 measurements use the full checkpoints")
+    if args.condition.startswith("variant") and args.cohort != "full":
+        parser.error("The numbered variant measurements use the full checkpoints")
     if args.output.exists() or args.batch_size < 1:
         parser.error("Specify a new output directory and a positive batch size")
     args.output.parent.mkdir(parents=True, exist_ok=True)

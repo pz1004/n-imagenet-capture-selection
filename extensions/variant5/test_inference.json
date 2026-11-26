@@ -1,0 +1,47 @@
+{
+  "started_utc": "2026-11-26T03:46:08.401606+00:00",
+  "completed_utc": "2026-11-26T03:48:27.594384+00:00",
+  "split": "test",
+  "sources": 36000,
+  "inputs": {
+    "protocol_sha256": "8d87ca4328a04effb8b01aca0b9a92aaa236daaeab1e4d294fd83da69d0b2f6c",
+    "audit_sha256": "b3b6c0fd882c8c4dabb9e295deeac52559370c5fdeed84d218cd5e040bd66c4c",
+    "freeze_sha256": "d15b476e61bab2beb7d0b0429235684a58896f7fcf4b793458e1966a434b605e"
+  },
+  "archive_sha256": "fb10f2db81f4a9ae0147997bb51e6625786d437363173744607c7cca7fdf3615",
+  "device": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "numpy": "2.5.4",
+  "batch": 32,
+  "crop": "events30k",
+  "window_exceptions": [
+    {
+      "source_id": "n03095699/ILSVRC2012_val_00049475",
+      "crop": "events30k",
+      "raw_events": 83291,
+      "drop_at": 83290,
+      "previous_us": 33558,
+      "last_stored_us": 2792,
+      "crop_start_inclusive": 36004,
+      "crop_stop_exclusive": 66004
+    },
+    {
+      "source_id": "n04606251/ILSVRC2012_val_00047231",
+      "crop": "events30k",
+      "raw_events": 131864,
+      "drop_at": 131863,
+      "previous_us": 48142,
+      "last_stored_us": 879,
+      "crop_start_inclusive": 4671,
+      "crop_stop_exclusive": 34671
+    }
+  ],
+  "runner_sha256": "7c7cb37d23f6918ba1bdb1e66584bd212c2773d55f551b72eaa286a26249ba9b",
+  "all_logits_checked": true,
+  "outputs_sha256": {
+    "histogram.npy": "f8a24339fc1063f7c9f65708fc3682494faf162d89499fd8956c35414cb343f5",
+    "predictions.csv": "f711d898b00a87fc7dc6dda277186400d20df5fbb3a31e804f9ba70d4bb5d69d",
+    "timestamp.npy": "f6c4b0d51f82435c83cdb4e96d924c46d911bda1200565288236e8b8d921fbb2"
+  }
+}

@@ -87,6 +87,19 @@ All three extensions join records using the existing `source_id` and class label
 
 The adaptation comparison conditions on frozen classifier states and policy fits. An exact quota fixes the number of requests but can select different source IDs across classifier states. The path comparison holds both the number and identity of requested sources fixed across alternative paths. The released derived measurements support CPU evaluation. To regenerate full score vectors from individual captures, obtain the event recordings and classifier checkpoints from the upstream providers.
 
+## Acquisition comparisons and five adaptation runs
+
+Each v1.2.0 extension supplies a compressed NumPy score table and source-level decisions. Load a table with `np.load(path, allow_pickle=False)` and inspect its `files` attribute. Source IDs use the same synset/filename-stem convention as `data/source_index.csv`. The calibration and test arrays each follow the frozen class and within-class hash order. Each replay checks that order and its labels against the public source manifest.
+
+| Extension | Inputs | Output unit |
+|---|---|---|
+| [Scan order](extensions/scan_order/README.md) | First and second classes, maximum softmax probability and hash-window duration on original square and transfer vertical/horizontal | Source and order, with confidence and learned-gain requests |
+| [Variant 5](extensions/variant5/README.md) | Two released classifiers on reference vertical, reference horizontal and both square diagonals | Source, model, request rule and follow-up path |
+| [Continuation](extensions/continuation/README.md) | Prefix and subsequent-block classes, scores, completeness, event counts, observed spans and averaged-probability classes | Source, request and action, including incomplete requests |
+| [Five runs](extensions/multiseed/README.md) | Released and five adapted classifiers on the same 4,500 policy calibration and 36,000 evaluation sources; reference linear paths supply calibration rows | Source, seed, scan order and selector fit |
+
+The included score tables and average-probability classes suffice for CPU policy refitting and both uncertainty analyses. The original event archives and pretrained checkpoints are distributed by the [N-ImageNet authors](https://82magnolia.github.io/n_imagenet/). Follow the [released-model regeneration instructions](regeneration/capture_windows.md) and [five-seed adaptation instructions](extensions/multiseed/RAW_REGENERATION.md) to generate logits from those upstream inputs.
+
 ## File integrity
 
 `data_manifest.csv` lists the relative path, size in bytes and SHA-256 digest of each released data, table and provenance file, including the extension measurements and results. On Linux, run the following in the repository root to check every digest.
