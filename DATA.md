@@ -75,9 +75,21 @@ The provenance directory contains byte-preserved originals from the transfer exp
 
 The protocol receipt also contains checksums of earlier working files. The public code implements the replay using the released measurements. Each run record carries the original float32 logit-array checksums. Those arrays can be regenerated with the upstream inputs as described in the README. The 9,000 calibration and 36,000 test prediction rows for each variant and window reproduce the individual CSV hashes in the run records.
 
+## Adaptation, follow-up paths and first-scan event rate
+
+All three extensions join records using the existing `source_id` and class label. Keep the trajectory pair, representation and model state with each result. In the tables, a gain over vertical is the change in accuracy across **all 36,000 test sources**. A yield per 100 extra scans uses the smaller number of requested sources as its denominator.
+
+| Directory | Measurements and comparisons |
+|---|---|
+| [Adaptation](extensions/adaptation/README.md) | Source-keyed predictions and confidence for the recalibration and calibration-only Ev-TTA arms, fitted request and switching rules, and comparisons to the released model fitted with the same policy-calibration allowance. Includes exact-quota comparisons and the directional breakdown on pairs with one correct scan. |
+| [Follow-up path](extensions/path/README.md) | Square-scan scores and derived fusion classes supplement the original linear records. A fixed vertical request mask permits a paired comparison of horizontal and square follow-ups under each terminal rule. |
+| [First-scan prefix](extensions/prefix/README.md) | The vertical event count in the first 20 ms and the vertical prediction score supply the request features. Results include fitted rules, per-source decisions at a fixed quota and at a transferred cutoff, and switching thresholds fitted on matching 20-ms reference windows. |
+
+The adaptation comparison conditions on frozen classifier states and policy fits. An exact quota fixes the number of requests but can select different source IDs across classifier states. The path comparison holds both the number and identity of requested sources fixed across alternative paths. The released derived measurements support CPU evaluation. To regenerate full score vectors from individual captures, obtain the event recordings and classifier checkpoints from the upstream providers.
+
 ## File integrity
 
-`data_manifest.csv` lists the relative path, size in bytes and SHA-256 digest of each released data, table and provenance file. On Linux, run the following in the repository root to check every digest.
+`data_manifest.csv` lists the relative path, size in bytes and SHA-256 digest of each released data, table and provenance file, including the extension measurements and results. On Linux, run the following in the repository root to check every digest.
 
 ```sh
 awk -F, 'NR > 1 {print $3 "  " $1}' data_manifest.csv | sha256sum --check

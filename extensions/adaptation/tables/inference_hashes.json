@@ -1,0 +1,54 @@
+{
+  "horizontal": {
+    "archive_sha256": "14ec6980bcc9f5592389448fd10e63690e93fa04a52b8ac59107f1737b3053ff",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "output_sha256": {
+      "predictions.csv": "279ef0bf57691e4e02781a04780eca53f2492995e6959fb1ab22593726396df9",
+      "bn/timestamp.npy": "d66e2a392d5b3371841f9c83a929fb4aff465cfd83282b61ddf0032aeef6dc7d",
+      "bn/histogram.npy": "323c007d90489bda28765564c4f977ae130f4e467ae10650b180c515f85190c6",
+      "evtta/timestamp.npy": "00049c34be1b09f0983b371035a681415a38e5b353b469d849bf78204f87859c",
+      "evtta/histogram.npy": "1de9d9e307f11aa2b2f862ca7e0fc6acc87f3a259071704941776ccf4cceb48f"
+    }
+  },
+  "variant1": {
+    "archive_sha256": "84e5683d1b39ae2ef05045461f1e495e4b6ae768c9207e763ecb211608c1061f",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "output_sha256": {
+      "predictions.csv": "fe89d2dd53bc7d27aef52e673d348eac9996c70e219c2c90f8b7d2c938dfb202",
+      "bn/timestamp.npy": "47be55c3d38dede6dd4fabd43b507f9e65d4c0440ab6e0041b867c341923f9a3",
+      "bn/histogram.npy": "e4f4b8bf1bfdd1cac07c5505fa55e080eab162fe431032c9284f06c5da1bdf06",
+      "evtta/timestamp.npy": "46bb59c92e52479a4dbeca89c292da113fe628d887ec3cd7b2d83d12d47070f5",
+      "evtta/histogram.npy": "142e5821d9adf3acbffe60d9dc1808ef0f31a0c548ee41ce4eb917f754ceb025"
+    }
+  },
+  "variant2": {
+    "archive_sha256": "fdfb98be5c8265e013fa8356df213fb8bfc7b8e57279ca3864894207ce453365",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "output_sha256": {
+      "predictions.csv": "10ce98c476ba0bf3f1ac6861b96af1330803bb88d49747cd42ce2e67ed08cf63",
+      "bn/timestamp.npy": "3cb1b18d2ee6a32273ffbe55b45d6b3bdb78bd687dc6a62757e8bc22ede236aa",
+      "bn/histogram.npy": "47a7af28b49453148eb60d30ce4eb679b422033fc0b0bb57eff56b084a4477d5",
+      "evtta/timestamp.npy": "32d58da7e67c1c500ed9d2f73a349aa1258968bc3d7daf91fbc3ebd77add397d",
+      "evtta/histogram.npy": "9452cc0f752d7a9b5d97f1eef9e16ce3b221fb266349278a788574aec1bdeb88"
+    }
+  },
+  "vertical": {
+    "archive_sha256": "329e56d14bc43667705b6a36177ef0bb1c0a9c4d4af18d81b1f075c858947f11",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "output_sha256": {
+      "predictions.csv": "596da8a5fe8a9671a94ebfa4d12ccd8700ab3e99a96c86eb33869cb5cf9f877f",
+      "bn/timestamp.npy": "a05b4c3e743bd4428793284ed7467ae6d7066c8be3e14936f802cf6c58a9afa0",
+      "bn/histogram.npy": "d201c04f64d616238d06bdc4c8bfc2105de6e6c42d054b56fd300e6759210be9",
+      "evtta/timestamp.npy": "0cf6ab1c7091b0e15c7d01e18963fd2b82f4b760960db664267e37323c8e8c02",
+      "evtta/histogram.npy": "6a1e5927c9e852659913888619d137a5c6d0d786a7e966dcf13fbdf433f20930"
+    }
+  }
+}

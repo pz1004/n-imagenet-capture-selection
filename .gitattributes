@@ -5,3 +5,6 @@ tables/*.json -text -eol
 data/*.gz binary
 tables/*.npz binary
 provenance/** -text -eol
+extensions/**/*.csv -text -eol whitespace=trailing-space,space-before-tab,cr-at-eol
+extensions/**/*.json -text -eol
+extensions/**/*.gz binary

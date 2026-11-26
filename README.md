@@ -1,8 +1,22 @@
 # N-ImageNet capture selection
 
-When does a second physical scan improve recognition, and can the first scan identify the photographs worth scanning again? This repository contains paired predictions and analysis code for vertical and horizontal N-ImageNet recordings of the same photographs.
+When does a second physical scan improve recognition, and can the first scan identify the photographs worth scanning again? This repository contains paired predictions and analysis code for vertical, horizontal and square N-ImageNet recordings of the same photographs.
 
 The Mini N-ImageNet pilot used 100 classes. The confirmation used the remaining 900 classes, with 9,000 images for cutoff calibration and selector fitting and 36,000 for evaluation. With Event Histogram and up to 30,000 events per capture, confidence ranked the correct scan higher in 75.61% of vertical-only successes and 68.33% of horizontal-only successes. The equally weighted mean was 71.97%. Across all 36,000 images, selecting the more confident scan corrected 2,015 errors and lost 1,875 correct predictions relative to always using the vertical scan. Accuracy rose from 37.08% to 37.47%.
+
+## Adaptation and follow-up path comparisons in v1.1.0
+
+These analyses reuse the 36,000 previously evaluated test photographs. Each asks what an optional second capture adds after a prescribed vertical pass. The cost measure is the number of captures in offline replay.
+
+| Analysis | Comparison on the transfer trajectories with Event Histogram |
+|---|---|
+| [Calibration-only adaptation](extensions/adaptation/README.md) | Directed horizontal requests on 30.10% of sources raised accuracy from 43.94% for adapted vertical alone to 46.00%. At exactly 10,800 requests per classifier state, the gain over each state's vertical baseline was 1.32 percentage points larger after Ev-TTA adaptation (paired 95% within-class interval 1.07–1.60). |
+| [Choice of follow-up trajectory](extensions/path/README.md) | The same 11,076 sources received a horizontal or square follow-up with the unadapted classifier. Path-specific fitted selectors reached 43.84% and 46.69%, respectively (square minus horizontal 2.85 points, 95% interval 2.58–3.11). A single square capture reached 46.84% when the initial path was freely selectable. |
+| [First 20 ms of the vertical scan](extensions/prefix/README.md) | At 10,800 requests, adding the vertical event rate to confidence increased net corrections from 434 to 516, or 0.23 points across all sources (95% interval 0.09–0.35). Transferring the numerical cutoff for the combined score requested only 11.41% of sources. |
+
+Each linked directory gives the CPU replay commands, source-level measurements or decisions, and results for both Event Histogram and Timestamp Image. The adaptation arm used disjoint sets of 4,500 calibration photographs for unlabeled model updates and for fitting the request and switching rules. The follow-up trajectory comparison used the released, unadapted classifiers. Instructions for regenerating adapted scores from the upstream recordings and checkpoints are included with the adaptation analysis.
+
+[Download the aggregate results for v1.1.0](https://github.com/pz1004/n-imagenet-capture-selection/releases/download/v1.1.0/capture-selection-results-v1.1.0.zip)
 
 ## Reproduce the comparisons
 
