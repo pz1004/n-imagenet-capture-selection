@@ -1,0 +1,1244 @@
+{
+  "0": {
+    "cutoff": 0.3400136774760354,
+    "first_correct": 15024,
+    "n": 36000,
+    "fits": {
+      "continue": [
+        -0.00592498300834901,
+        0.30743858256860146,
+        -0.15705651127278517,
+        1.0160382313889942
+      ],
+      "horizontal": [
+        0.08133087045359076,
+        0.33585473599422105,
+        0.8690652808773844,
+        1.0173909176587472
+      ],
+      "square": [
+        -0.05362942549143596,
+        0.32184654439970195,
+        -0.42110015231367404,
+        0.9892738824132129
+      ]
+    },
+    "gate": {
+      "cutoff": {
+        "requested": 10905,
+        "n": 36000,
+        "first_correct": 15024,
+        "arms": {
+          "continue": {
+            "eligible": 10571,
+            "second_acc_complete_pct": 42.76125182869109,
+            "attainable_rescues": 1519,
+            "first_only_successes": 795,
+            "direct_gain_pp": 2.011111111111111,
+            "random_expected_pct": 43.08551967592592,
+            "rescues": 1414,
+            "losses": 596,
+            "correct": 15842,
+            "accuracy_pct": 44.00555555555555
+          },
+          "horizontal": {
+            "eligible": 10853,
+            "second_acc_complete_pct": 34.27102829846076,
+            "attainable_rescues": 1141,
+            "first_only_successes": 1018,
+            "direct_gain_pp": 0.3416666666666667,
+            "random_expected_pct": 42.27690046296296,
+            "rescues": 646,
+            "losses": 268,
+            "correct": 15402,
+            "accuracy_pct": 42.78333333333333
+          },
+          "square": {
+            "eligible": 10837,
+            "second_acc_complete_pct": 46.976392929066904,
+            "attainable_rescues": 2063,
+            "first_only_successes": 743,
+            "direct_gain_pp": 3.6666666666666665,
+            "random_expected_pct": 44.03381712962963,
+            "rescues": 1975,
+            "losses": 639,
+            "correct": 16360,
+            "accuracy_pct": 45.44444444444444
+          }
+        },
+        "horizontal_minus_continue": -1.2222222222222214,
+        "square_minus_continue": 1.43888888888889
+      },
+      "released_mask": {
+        "requested": 10905,
+        "n": 36000,
+        "first_correct": 15024,
+        "arms": {
+          "continue": {
+            "eligible": 10571,
+            "second_acc_complete_pct": 42.76125182869109,
+            "attainable_rescues": 1519,
+            "first_only_successes": 795,
+            "direct_gain_pp": 2.011111111111111,
+            "random_expected_pct": 43.08551967592592,
+            "rescues": 1414,
+            "losses": 596,
+            "correct": 15842,
+            "accuracy_pct": 44.00555555555555
+          },
+          "horizontal": {
+            "eligible": 10853,
+            "second_acc_complete_pct": 34.27102829846076,
+            "attainable_rescues": 1141,
+            "first_only_successes": 1018,
+            "direct_gain_pp": 0.3416666666666667,
+            "random_expected_pct": 42.27690046296296,
+            "rescues": 646,
+            "losses": 268,
+            "correct": 15402,
+            "accuracy_pct": 42.78333333333333
+          },
+          "square": {
+            "eligible": 10837,
+            "second_acc_complete_pct": 46.976392929066904,
+            "attainable_rescues": 2063,
+            "first_only_successes": 743,
+            "direct_gain_pp": 3.6666666666666665,
+            "random_expected_pct": 44.03381712962963,
+            "rescues": 1975,
+            "losses": 639,
+            "correct": 16360,
+            "accuracy_pct": 45.44444444444444
+          }
+        },
+        "horizontal_minus_continue": -1.2222222222222214,
+        "square_minus_continue": 1.43888888888889
+      },
+      "quota": {
+        "requested": 10800,
+        "n": 36000,
+        "first_correct": 15024,
+        "arms": {
+          "continue": {
+            "eligible": 10469,
+            "second_acc_complete_pct": 42.76125182869109,
+            "attainable_rescues": 1505,
+            "first_only_successes": 782,
+            "direct_gain_pp": 2.0083333333333333,
+            "random_expected_pct": 43.072500000000005,
+            "rescues": 1403,
+            "losses": 588,
+            "correct": 15839,
+            "accuracy_pct": 43.99722222222222
+          },
+          "horizontal": {
+            "eligible": 10748,
+            "second_acc_complete_pct": 34.27102829846076,
+            "attainable_rescues": 1131,
+            "first_only_successes": 1004,
+            "direct_gain_pp": 0.3527777777777778,
+            "random_expected_pct": 42.27166666666667,
+            "rescues": 643,
+            "losses": 265,
+            "correct": 15402,
+            "accuracy_pct": 42.78333333333333
+          },
+          "square": {
+            "eligible": 10732,
+            "second_acc_complete_pct": 46.976392929066904,
+            "attainable_rescues": 2038,
+            "first_only_successes": 733,
+            "direct_gain_pp": 3.625,
+            "random_expected_pct": 44.01166666666666,
+            "rescues": 1954,
+            "losses": 633,
+            "correct": 16345,
+            "accuracy_pct": 45.40277777777778
+          }
+        },
+        "horizontal_minus_continue": -1.2138888888888886,
+        "square_minus_continue": 1.4055555555555586
+      },
+      "complete": {
+        "requested": 10551,
+        "n": 34797,
+        "first_correct": 14487,
+        "arms": {
+          "continue": {
+            "eligible": 10551,
+            "second_acc_complete_pct": 42.76805471736069,
+            "attainable_rescues": 1517,
+            "first_only_successes": 795,
+            "direct_gain_pp": 2.074891513636233,
+            "random_expected_pct": 43.0323434948727,
+            "rescues": 1412,
+            "losses": 596,
+            "correct": 15303,
+            "accuracy_pct": 43.97792913182171
+          },
+          "horizontal": {
+            "eligible": 10551,
+            "second_acc_complete_pct": 34.390895766876454,
+            "attainable_rescues": 1122,
+            "first_only_successes": 989,
+            "direct_gain_pp": 0.38221685777509556,
+            "random_expected_pct": 42.20278509520975,
+            "rescues": 637,
+            "losses": 261,
+            "correct": 14863,
+            "accuracy_pct": 42.713452309107105
+          },
+          "square": {
+            "eligible": 10551,
+            "second_acc_complete_pct": 46.96669253096532,
+            "attainable_rescues": 2020,
+            "first_only_successes": 721,
+            "direct_gain_pp": 3.7330804379687903,
+            "random_expected_pct": 43.97431054322948,
+            "rescues": 1934,
+            "losses": 620,
+            "correct": 15801,
+            "accuracy_pct": 45.409086990257784
+          }
+        },
+        "horizontal_minus_continue": -1.264476822714606,
+        "square_minus_continue": 1.4311578584360731
+      }
+    }
+  },
+  "1": {
+    "cutoff": 0.3414389963378021,
+    "first_correct": 15503,
+    "n": 36000,
+    "fits": {
+      "continue": [
+        -0.0158678162917875,
+        0.2940136521855596,
+        -0.17733324007774637,
+        0.9782459273201599
+      ],
+      "horizontal": [
+        0.005072189189604723,
+        0.32166845327264104,
+        -0.0726485256165577,
+        1.2199661169071916
+      ],
+      "square": [
+        -0.03231047038536522,
+        0.32262109239045367,
+        -0.31036100658989646,
+        1.1317975852671416
+      ]
+    },
+    "gate": {
+      "cutoff": {
+        "requested": 10747,
+        "n": 36000,
+        "first_correct": 15503,
+        "arms": {
+          "continue": {
+            "eligible": 10445,
+            "second_acc_complete_pct": 43.67057743610338,
+            "attainable_rescues": 1421,
+            "first_only_successes": 826,
+            "direct_gain_pp": 1.6527777777777777,
+            "random_expected_pct": 44.173417129629634,
+            "rescues": 1302,
+            "losses": 644,
+            "correct": 16161,
+            "accuracy_pct": 44.891666666666666
+          },
+          "horizontal": {
+            "eligible": 10696,
+            "second_acc_complete_pct": 44.36963991395927,
+            "attainable_rescues": 1584,
+            "first_only_successes": 863,
+            "direct_gain_pp": 2.0027777777777778,
+            "random_expected_pct": 44.415556327160495,
+            "rescues": 1405,
+            "losses": 593,
+            "correct": 16315,
+            "accuracy_pct": 45.31944444444444
+          },
+          "square": {
+            "eligible": 10691,
+            "second_acc_complete_pct": 46.27153725665697,
+            "attainable_rescues": 1854,
+            "first_only_successes": 809,
+            "direct_gain_pp": 2.9027777777777777,
+            "random_expected_pct": 44.76715570987654,
+            "rescues": 1735,
+            "losses": 676,
+            "correct": 16562,
+            "accuracy_pct": 46.00555555555555
+          }
+        },
+        "horizontal_minus_continue": 0.42777777777777715,
+        "square_minus_continue": 1.1138888888888872
+      },
+      "released_mask": {
+        "requested": 10905,
+        "n": 36000,
+        "first_correct": 15503,
+        "arms": {
+          "continue": {
+            "eligible": 10571,
+            "second_acc_complete_pct": 43.67057743610338,
+            "attainable_rescues": 1273,
+            "first_only_successes": 782,
+            "direct_gain_pp": 1.363888888888889,
+            "random_expected_pct": 44.189729166666666,
+            "rescues": 1032,
+            "losses": 488,
+            "correct": 16047,
+            "accuracy_pct": 44.575
+          },
+          "horizontal": {
+            "eligible": 10853,
+            "second_acc_complete_pct": 44.36963991395927,
+            "attainable_rescues": 1438,
+            "first_only_successes": 841,
+            "direct_gain_pp": 1.6583333333333334,
+            "random_expected_pct": 44.43542824074074,
+            "rescues": 1138,
+            "losses": 457,
+            "correct": 16184,
+            "accuracy_pct": 44.955555555555556
+          },
+          "square": {
+            "eligible": 10837,
+            "second_acc_complete_pct": 46.27153725665697,
+            "attainable_rescues": 1674,
+            "first_only_successes": 813,
+            "direct_gain_pp": 2.3916666666666666,
+            "random_expected_pct": 44.79219675925926,
+            "rescues": 1425,
+            "losses": 552,
+            "correct": 16376,
+            "accuracy_pct": 45.48888888888889
+          }
+        },
+        "horizontal_minus_continue": 0.38055555555555287,
+        "square_minus_continue": 0.9138888888888843
+      },
+      "quota": {
+        "requested": 10800,
+        "n": 36000,
+        "first_correct": 15503,
+        "arms": {
+          "continue": {
+            "eligible": 10496,
+            "second_acc_complete_pct": 43.67057743610338,
+            "attainable_rescues": 1430,
+            "first_only_successes": 833,
+            "direct_gain_pp": 1.6583333333333334,
+            "random_expected_pct": 44.17888888888889,
+            "rescues": 1309,
+            "losses": 647,
+            "correct": 16165,
+            "accuracy_pct": 44.90277777777778
+          },
+          "horizontal": {
+            "eligible": 10748,
+            "second_acc_complete_pct": 44.36963991395927,
+            "attainable_rescues": 1594,
+            "first_only_successes": 867,
+            "direct_gain_pp": 2.0194444444444444,
+            "random_expected_pct": 44.422222222222224,
+            "rescues": 1413,
+            "losses": 595,
+            "correct": 16321,
+            "accuracy_pct": 45.33611111111111
+          },
+          "square": {
+            "eligible": 10744,
+            "second_acc_complete_pct": 46.27153725665697,
+            "attainable_rescues": 1861,
+            "first_only_successes": 816,
+            "direct_gain_pp": 2.9027777777777777,
+            "random_expected_pct": 44.775555555555556,
+            "rescues": 1741,
+            "losses": 678,
+            "correct": 16566,
+            "accuracy_pct": 46.016666666666666
+          }
+        },
+        "horizontal_minus_continue": 0.43333333333333,
+        "square_minus_continue": 1.1138888888888872
+      },
+      "complete": {
+        "requested": 10431,
+        "n": 34797,
+        "first_correct": 14979,
+        "arms": {
+          "continue": {
+            "eligible": 10431,
+            "second_acc_complete_pct": 43.684800413828775,
+            "attainable_rescues": 1420,
+            "first_only_successes": 824,
+            "direct_gain_pp": 1.7127913325861426,
+            "random_expected_pct": 44.20032850342562,
+            "rescues": 1301,
+            "losses": 642,
+            "correct": 15638,
+            "accuracy_pct": 44.94065580366124
+          },
+          "horizontal": {
+            "eligible": 10431,
+            "second_acc_complete_pct": 44.406126964968244,
+            "attainable_rescues": 1547,
+            "first_only_successes": 838,
+            "direct_gain_pp": 2.037531971146938,
+            "random_expected_pct": 44.413974136340585,
+            "rescues": 1370,
+            "losses": 575,
+            "correct": 15774,
+            "accuracy_pct": 45.33149409431847
+          },
+          "square": {
+            "eligible": 10431,
+            "second_acc_complete_pct": 46.285599333275854,
+            "attainable_rescues": 1812,
+            "first_only_successes": 788,
+            "direct_gain_pp": 2.9427824237721643,
+            "random_expected_pct": 44.77665482770027,
+            "rescues": 1695,
+            "losses": 660,
+            "correct": 16014,
+            "accuracy_pct": 46.02120872489008
+          }
+        },
+        "horizontal_minus_continue": 0.39083829065723563,
+        "square_minus_continue": 1.0805529212288434
+      }
+    }
+  },
+  "2": {
+    "cutoff": 0.33245639230131757,
+    "first_correct": 15445,
+    "n": 36000,
+    "fits": {
+      "continue": [
+        -0.017373851533624154,
+        0.2924405121859074,
+        -0.1747563535883438,
+        0.9405427246204525
+      ],
+      "horizontal": [
+        0.0029375029122502617,
+        0.3210147553472314,
+        0.001485457931997407,
+        1.225030783869191
+      ],
+      "square": [
+        -0.032342782471189366,
+        0.31920628488727165,
+        -0.25634122611488314,
+        1.1614714086165205
+      ]
+    },
+    "gate": {
+      "cutoff": {
+        "requested": 10435,
+        "n": 36000,
+        "first_correct": 15445,
+        "arms": {
+          "continue": {
+            "eligible": 10151,
+            "second_acc_complete_pct": 43.679183041220845,
+            "attainable_rescues": 1394,
+            "first_only_successes": 758,
+            "direct_gain_pp": 1.7666666666666666,
+            "random_expected_pct": 43.98895177469136,
+            "rescues": 1263,
+            "losses": 598,
+            "correct": 16110,
+            "accuracy_pct": 44.75
+          },
+          "horizontal": {
+            "eligible": 10389,
+            "second_acc_complete_pct": 43.73550856217002,
+            "attainable_rescues": 1500,
+            "first_only_successes": 795,
+            "direct_gain_pp": 1.9583333333333333,
+            "random_expected_pct": 44.15562191358025,
+            "rescues": 1299,
+            "losses": 528,
+            "correct": 16216,
+            "accuracy_pct": 45.044444444444444
+          },
+          "square": {
+            "eligible": 10383,
+            "second_acc_complete_pct": 46.29111658089058,
+            "attainable_rescues": 1775,
+            "first_only_successes": 743,
+            "direct_gain_pp": 2.8666666666666667,
+            "random_expected_pct": 44.55337577160494,
+            "rescues": 1620,
+            "losses": 568,
+            "correct": 16497,
+            "accuracy_pct": 45.825
+          }
+        },
+        "horizontal_minus_continue": 0.2944444444444443,
+        "square_minus_continue": 1.0750000000000028
+      },
+      "released_mask": {
+        "requested": 10905,
+        "n": 36000,
+        "first_correct": 15445,
+        "arms": {
+          "continue": {
+            "eligible": 10571,
+            "second_acc_complete_pct": 43.679183041220845,
+            "attainable_rescues": 1259,
+            "first_only_successes": 762,
+            "direct_gain_pp": 1.3805555555555555,
+            "random_expected_pct": 44.037873842592596,
+            "rescues": 1025,
+            "losses": 467,
+            "correct": 16003,
+            "accuracy_pct": 44.452777777777776
+          },
+          "horizontal": {
+            "eligible": 10853,
+            "second_acc_complete_pct": 43.73550856217002,
+            "attainable_rescues": 1410,
+            "first_only_successes": 841,
+            "direct_gain_pp": 1.5805555555555555,
+            "random_expected_pct": 44.21205092592593,
+            "rescues": 1072,
+            "losses": 439,
+            "correct": 16078,
+            "accuracy_pct": 44.66111111111111
+          },
+          "square": {
+            "eligible": 10837,
+            "second_acc_complete_pct": 46.29111658089058,
+            "attainable_rescues": 1652,
+            "first_only_successes": 791,
+            "direct_gain_pp": 2.3916666666666666,
+            "random_expected_pct": 44.62771990740741,
+            "rescues": 1354,
+            "losses": 492,
+            "correct": 16307,
+            "accuracy_pct": 45.297222222222224
+          }
+        },
+        "horizontal_minus_continue": 0.2083333333333357,
+        "square_minus_continue": 0.8444444444444485
+      },
+      "quota": {
+        "requested": 10800,
+        "n": 36000,
+        "first_correct": 15445,
+        "arms": {
+          "continue": {
+            "eligible": 10508,
+            "second_acc_complete_pct": 43.679183041220845,
+            "attainable_rescues": 1447,
+            "first_only_successes": 789,
+            "direct_gain_pp": 1.8277777777777777,
+            "random_expected_pct": 44.026944444444446,
+            "rescues": 1307,
+            "losses": 615,
+            "correct": 16137,
+            "accuracy_pct": 44.825
+          },
+          "horizontal": {
+            "eligible": 10753,
+            "second_acc_complete_pct": 43.73550856217002,
+            "attainable_rescues": 1567,
+            "first_only_successes": 841,
+            "direct_gain_pp": 2.0166666666666666,
+            "random_expected_pct": 44.199444444444445,
+            "rescues": 1349,
+            "losses": 555,
+            "correct": 16239,
+            "accuracy_pct": 45.108333333333334
+          },
+          "square": {
+            "eligible": 10748,
+            "second_acc_complete_pct": 46.29111658089058,
+            "attainable_rescues": 1848,
+            "first_only_successes": 774,
+            "direct_gain_pp": 2.9833333333333334,
+            "random_expected_pct": 44.611111111111114,
+            "rescues": 1681,
+            "losses": 591,
+            "correct": 16535,
+            "accuracy_pct": 45.93055555555556
+          }
+        },
+        "horizontal_minus_continue": 0.28333333333333144,
+        "square_minus_continue": 1.1055555555555543
+      },
+      "complete": {
+        "requested": 10138,
+        "n": 34797,
+        "first_correct": 14922,
+        "arms": {
+          "continue": {
+            "eligible": 10138,
+            "second_acc_complete_pct": 43.69054803575021,
+            "attainable_rescues": 1393,
+            "first_only_successes": 757,
+            "direct_gain_pp": 1.8277437710147426,
+            "random_expected_pct": 44.00998075033925,
+            "rescues": 1262,
+            "losses": 597,
+            "correct": 15587,
+            "accuracy_pct": 44.79409144466477
+          },
+          "horizontal": {
+            "eligible": 10138,
+            "second_acc_complete_pct": 43.773888553610945,
+            "attainable_rescues": 1463,
+            "first_only_successes": 777,
+            "direct_gain_pp": 1.9714343190504928,
+            "random_expected_pct": 44.14645675027361,
+            "rescues": 1264,
+            "losses": 519,
+            "correct": 15667,
+            "accuracy_pct": 45.02399632152197
+          },
+          "square": {
+            "eligible": 10138,
+            "second_acc_complete_pct": 46.285599333275854,
+            "attainable_rescues": 1732,
+            "first_only_successes": 727,
+            "direct_gain_pp": 2.888180015518579,
+            "random_expected_pct": 44.558396578296325,
+            "rescues": 1581,
+            "losses": 556,
+            "correct": 15947,
+            "accuracy_pct": 45.82866339052217
+          }
+        },
+        "horizontal_minus_continue": 0.22990487685719785,
+        "square_minus_continue": 1.034571945857401
+      }
+    }
+  },
+  "3": {
+    "cutoff": 0.33823632938446213,
+    "first_correct": 15602,
+    "n": 36000,
+    "fits": {
+      "continue": [
+        -0.01835293356857628,
+        0.29524110839821,
+        -0.14734539881920386,
+        0.9742292466556725
+      ],
+      "horizontal": [
+        0.007745884413204487,
+        0.321226700755703,
+        0.048966000158500764,
+        1.1902132736283364
+      ],
+      "square": [
+        -0.022678402463460347,
+        0.3235998389065387,
+        -0.2763936498112271,
+        1.111275809279972
+      ]
+    },
+    "gate": {
+      "cutoff": {
+        "requested": 10618,
+        "n": 36000,
+        "first_correct": 15602,
+        "arms": {
+          "continue": {
+            "eligible": 10327,
+            "second_acc_complete_pct": 44.075040876624314,
+            "attainable_rescues": 1394,
+            "first_only_successes": 793,
+            "direct_gain_pp": 1.6694444444444445,
+            "random_expected_pct": 44.41543611111111,
+            "rescues": 1251,
+            "losses": 606,
+            "correct": 16247,
+            "accuracy_pct": 45.13055555555555
+          },
+          "horizontal": {
+            "eligible": 10576,
+            "second_acc_complete_pct": 43.99530686929072,
+            "attainable_rescues": 1501,
+            "first_only_successes": 837,
+            "direct_gain_pp": 1.8444444444444446,
+            "random_expected_pct": 44.588306327160495,
+            "rescues": 1255,
+            "losses": 519,
+            "correct": 16338,
+            "accuracy_pct": 45.38333333333333
+          },
+          "square": {
+            "eligible": 10564,
+            "second_acc_complete_pct": 46.41138957261132,
+            "attainable_rescues": 1807,
+            "first_only_successes": 797,
+            "direct_gain_pp": 2.8055555555555554,
+            "random_expected_pct": 44.94551682098765,
+            "rescues": 1707,
+            "losses": 671,
+            "correct": 16638,
+            "accuracy_pct": 46.21666666666667
+          }
+        },
+        "horizontal_minus_continue": 0.25277777777778,
+        "square_minus_continue": 1.0861111111111157
+      },
+      "released_mask": {
+        "requested": 10905,
+        "n": 36000,
+        "first_correct": 15602,
+        "arms": {
+          "continue": {
+            "eligible": 10571,
+            "second_acc_complete_pct": 44.075040876624314,
+            "attainable_rescues": 1263,
+            "first_only_successes": 790,
+            "direct_gain_pp": 1.3138888888888889,
+            "random_expected_pct": 44.44453472222222,
+            "rescues": 1012,
+            "losses": 453,
+            "correct": 16161,
+            "accuracy_pct": 44.891666666666666
+          },
+          "horizontal": {
+            "eligible": 10853,
+            "second_acc_complete_pct": 43.99530686929072,
+            "attainable_rescues": 1404,
+            "first_only_successes": 856,
+            "direct_gain_pp": 1.5222222222222221,
+            "random_expected_pct": 44.622077546296296,
+            "rescues": 1049,
+            "losses": 435,
+            "correct": 16216,
+            "accuracy_pct": 45.044444444444444
+          },
+          "square": {
+            "eligible": 10837,
+            "second_acc_complete_pct": 46.41138957261132,
+            "attainable_rescues": 1658,
+            "first_only_successes": 844,
+            "direct_gain_pp": 2.261111111111111,
+            "random_expected_pct": 44.98894328703704,
+            "rescues": 1421,
+            "losses": 567,
+            "correct": 16456,
+            "accuracy_pct": 45.71111111111111
+          }
+        },
+        "horizontal_minus_continue": 0.15277777777777857,
+        "square_minus_continue": 0.8194444444444429
+      },
+      "quota": {
+        "requested": 10800,
+        "n": 36000,
+        "first_correct": 15602,
+        "arms": {
+          "continue": {
+            "eligible": 10502,
+            "second_acc_complete_pct": 44.075040876624314,
+            "attainable_rescues": 1428,
+            "first_only_successes": 813,
+            "direct_gain_pp": 1.7083333333333333,
+            "random_expected_pct": 44.43388888888889,
+            "rescues": 1279,
+            "losses": 619,
+            "correct": 16262,
+            "accuracy_pct": 45.172222222222224
+          },
+          "horizontal": {
+            "eligible": 10754,
+            "second_acc_complete_pct": 43.99530686929072,
+            "attainable_rescues": 1533,
+            "first_only_successes": 857,
+            "direct_gain_pp": 1.8777777777777778,
+            "random_expected_pct": 44.60972222222222,
+            "rescues": 1280,
+            "losses": 534,
+            "correct": 16348,
+            "accuracy_pct": 45.41111111111111
+          },
+          "square": {
+            "eligible": 10742,
+            "second_acc_complete_pct": 46.41138957261132,
+            "attainable_rescues": 1833,
+            "first_only_successes": 817,
+            "direct_gain_pp": 2.8222222222222224,
+            "random_expected_pct": 44.973055555555554,
+            "rescues": 1729,
+            "losses": 686,
+            "correct": 16645,
+            "accuracy_pct": 46.236111111111114
+          }
+        },
+        "horizontal_minus_continue": 0.23888888888888715,
+        "square_minus_continue": 1.06388888888889
+      },
+      "complete": {
+        "requested": 10311,
+        "n": 34797,
+        "first_correct": 15073,
+        "arms": {
+          "continue": {
+            "eligible": 10311,
+            "second_acc_complete_pct": 44.08426013736816,
+            "attainable_rescues": 1392,
+            "first_only_successes": 793,
+            "direct_gain_pp": 1.7214127654682876,
+            "random_expected_pct": 44.43420428883246,
+            "rescues": 1249,
+            "losses": 606,
+            "correct": 15716,
+            "accuracy_pct": 45.164813058597005
+          },
+          "horizontal": {
+            "eligible": 10311,
+            "second_acc_complete_pct": 44.023910107193146,
+            "attainable_rescues": 1459,
+            "first_only_successes": 815,
+            "direct_gain_pp": 1.8507342587004627,
+            "random_expected_pct": 44.572157621021475,
+            "rescues": 1218,
+            "losses": 506,
+            "correct": 15785,
+            "accuracy_pct": 45.36310601488634
+          },
+          "square": {
+            "eligible": 10311,
+            "second_acc_complete_pct": 46.41204701554732,
+            "attainable_rescues": 1769,
+            "first_only_successes": 777,
+            "direct_gain_pp": 2.8508204730292843,
+            "random_expected_pct": 44.94684568375706,
+            "rescues": 1671,
+            "losses": 655,
+            "correct": 16089,
+            "accuracy_pct": 46.236744546943704
+          }
+        },
+        "horizontal_minus_continue": 0.19829295628933608,
+        "square_minus_continue": 1.0719314883466993
+      }
+    }
+  },
+  "4": {
+    "cutoff": 0.3403591747229229,
+    "first_correct": 15458,
+    "n": 36000,
+    "fits": {
+      "continue": [
+        -0.01193048480897616,
+        0.2920185082859433,
+        -0.1788464771041464,
+        0.9598975146403368
+      ],
+      "horizontal": [
+        0.012986944392302925,
+        0.32400640358367433,
+        -0.004328079572317654,
+        1.1314258549885194
+      ],
+      "square": [
+        -0.028143416206645337,
+        0.3241070491196457,
+        -0.25841563600635026,
+        1.134749018157924
+      ]
+    },
+    "gate": {
+      "cutoff": {
+        "requested": 10709,
+        "n": 36000,
+        "first_correct": 15458,
+        "arms": {
+          "continue": {
+            "eligible": 10424,
+            "second_acc_complete_pct": 43.60746966524196,
+            "attainable_rescues": 1404,
+            "first_only_successes": 809,
+            "direct_gain_pp": 1.6527777777777777,
+            "random_expected_pct": 44.023009876543206,
+            "rescues": 1302,
+            "losses": 621,
+            "correct": 16139,
+            "accuracy_pct": 44.830555555555556
+          },
+          "horizontal": {
+            "eligible": 10665,
+            "second_acc_complete_pct": 43.85842389027013,
+            "attainable_rescues": 1534,
+            "first_only_successes": 827,
+            "direct_gain_pp": 1.9638888888888888,
+            "random_expected_pct": 44.27751388888888,
+            "rescues": 1350,
+            "losses": 554,
+            "correct": 16254,
+            "accuracy_pct": 45.15
+          },
+          "square": {
+            "eligible": 10652,
+            "second_acc_complete_pct": 46.215596330275226,
+            "attainable_rescues": 1818,
+            "first_only_successes": 781,
+            "direct_gain_pp": 2.8805555555555555,
+            "random_expected_pct": 44.605559645061724,
+            "rescues": 1684,
+            "losses": 621,
+            "correct": 16521,
+            "accuracy_pct": 45.891666666666666
+          }
+        },
+        "horizontal_minus_continue": 0.31944444444444287,
+        "square_minus_continue": 1.06111111111111
+      },
+      "released_mask": {
+        "requested": 10905,
+        "n": 36000,
+        "first_correct": 15458,
+        "arms": {
+          "continue": {
+            "eligible": 10571,
+            "second_acc_complete_pct": 43.60746966524196,
+            "attainable_rescues": 1254,
+            "first_only_successes": 778,
+            "direct_gain_pp": 1.3222222222222222,
+            "random_expected_pct": 44.04285185185185,
+            "rescues": 1032,
+            "losses": 477,
+            "correct": 16013,
+            "accuracy_pct": 44.480555555555554
+          },
+          "horizontal": {
+            "eligible": 10853,
+            "second_acc_complete_pct": 43.85842389027013,
+            "attainable_rescues": 1408,
+            "first_only_successes": 841,
+            "direct_gain_pp": 1.575,
+            "random_expected_pct": 44.30201388888889,
+            "rescues": 1094,
+            "losses": 444,
+            "correct": 16108,
+            "accuracy_pct": 44.74444444444445
+          },
+          "square": {
+            "eligible": 10837,
+            "second_acc_complete_pct": 46.215596330275226,
+            "attainable_rescues": 1653,
+            "first_only_successes": 797,
+            "direct_gain_pp": 2.3777777777777778,
+            "random_expected_pct": 44.636063657407405,
+            "rescues": 1387,
+            "losses": 525,
+            "correct": 16320,
+            "accuracy_pct": 45.333333333333336
+          }
+        },
+        "horizontal_minus_continue": 0.26388888888889284,
+        "square_minus_continue": 0.8527777777777814
+      },
+      "quota": {
+        "requested": 10800,
+        "n": 36000,
+        "first_correct": 15458,
+        "arms": {
+          "continue": {
+            "eligible": 10513,
+            "second_acc_complete_pct": 43.60746966524196,
+            "attainable_rescues": 1421,
+            "first_only_successes": 815,
+            "direct_gain_pp": 1.6833333333333333,
+            "random_expected_pct": 44.032222222222224,
+            "rescues": 1316,
+            "losses": 625,
+            "correct": 16149,
+            "accuracy_pct": 44.858333333333334
+          },
+          "horizontal": {
+            "eligible": 10756,
+            "second_acc_complete_pct": 43.85842389027013,
+            "attainable_rescues": 1548,
+            "first_only_successes": 834,
+            "direct_gain_pp": 1.9833333333333334,
+            "random_expected_pct": 44.28888888888889,
+            "rescues": 1362,
+            "losses": 557,
+            "correct": 16263,
+            "accuracy_pct": 45.175
+          },
+          "square": {
+            "eligible": 10743,
+            "second_acc_complete_pct": 46.215596330275226,
+            "attainable_rescues": 1837,
+            "first_only_successes": 790,
+            "direct_gain_pp": 2.908333333333333,
+            "random_expected_pct": 44.61972222222222,
+            "rescues": 1702,
+            "losses": 625,
+            "correct": 16535,
+            "accuracy_pct": 45.93055555555556
+          }
+        },
+        "horizontal_minus_continue": 0.3166666666666629,
+        "square_minus_continue": 1.0722222222222229
+      },
+      "complete": {
+        "requested": 10408,
+        "n": 34797,
+        "first_correct": 14935,
+        "arms": {
+          "continue": {
+            "eligible": 10408,
+            "second_acc_complete_pct": 43.61870276173233,
+            "attainable_rescues": 1402,
+            "first_only_successes": 809,
+            "direct_gain_pp": 1.7041698997039976,
+            "random_expected_pct": 44.04640969243468,
+            "rescues": 1300,
+            "losses": 621,
+            "correct": 15614,
+            "accuracy_pct": 44.87168434060408
+          },
+          "horizontal": {
+            "eligible": 10408,
+            "second_acc_complete_pct": 43.89458861396097,
+            "attainable_rescues": 1496,
+            "first_only_successes": 802,
+            "direct_gain_pp": 1.994424806736213,
+            "random_expected_pct": 44.2673204172424,
+            "rescues": 1315,
+            "losses": 541,
+            "correct": 15709,
+            "accuracy_pct": 45.144696381872
+          },
+          "square": {
+            "eligible": 10408,
+            "second_acc_complete_pct": 46.20800643733655,
+            "attainable_rescues": 1783,
+            "first_only_successes": 766,
+            "direct_gain_pp": 2.922665747047159,
+            "random_expected_pct": 44.614588638340926,
+            "rescues": 1654,
+            "losses": 611,
+            "correct": 15978,
+            "accuracy_pct": 45.917751530304336
+          }
+        },
+        "horizontal_minus_continue": 0.27301204126792555,
+        "square_minus_continue": 1.0460671897002598
+      }
+    }
+  },
+  "5": {
+    "cutoff": 0.3371490937164098,
+    "first_correct": 15393,
+    "n": 36000,
+    "fits": {
+      "continue": [
+        -0.017146736518470766,
+        0.29493437396037164,
+        -0.10696484098680031,
+        1.0147224588409822
+      ],
+      "horizontal": [
+        0.0010510984370958962,
+        0.31967038711757195,
+        -0.044027703137810965,
+        1.1377000216450377
+      ],
+      "square": [
+        -0.026726810742287787,
+        0.32320444499729883,
+        -0.3236755155889144,
+        1.0764199692134533
+      ]
+    },
+    "gate": {
+      "cutoff": {
+        "requested": 10669,
+        "n": 36000,
+        "first_correct": 15393,
+        "arms": {
+          "continue": {
+            "eligible": 10378,
+            "second_acc_complete_pct": 43.50133386879321,
+            "attainable_rescues": 1434,
+            "first_only_successes": 787,
+            "direct_gain_pp": 1.7972222222222223,
+            "random_expected_pct": 43.83181913580247,
+            "rescues": 1263,
+            "losses": 582,
+            "correct": 16074,
+            "accuracy_pct": 44.65
+          },
+          "horizontal": {
+            "eligible": 10621,
+            "second_acc_complete_pct": 44.0511774729726,
+            "attainable_rescues": 1582,
+            "first_only_successes": 828,
+            "direct_gain_pp": 2.0944444444444446,
+            "random_expected_pct": 44.099367361111106,
+            "rescues": 1372,
+            "losses": 568,
+            "correct": 16197,
+            "accuracy_pct": 44.99166666666667
+          },
+          "square": {
+            "eligible": 10617,
+            "second_acc_complete_pct": 46.15685835757441,
+            "attainable_rescues": 1824,
+            "first_only_successes": 796,
+            "direct_gain_pp": 2.8555555555555556,
+            "random_expected_pct": 44.38173364197531,
+            "rescues": 1719,
+            "losses": 692,
+            "correct": 16420,
+            "accuracy_pct": 45.611111111111114
+          }
+        },
+        "horizontal_minus_continue": 0.34166666666666856,
+        "square_minus_continue": 0.9611111111111157
+      },
+      "released_mask": {
+        "requested": 10905,
+        "n": 36000,
+        "first_correct": 15393,
+        "arms": {
+          "continue": {
+            "eligible": 10571,
+            "second_acc_complete_pct": 43.50133386879321,
+            "attainable_rescues": 1241,
+            "first_only_successes": 770,
+            "direct_gain_pp": 1.3083333333333333,
+            "random_expected_pct": 43.85556481481481,
+            "rescues": 950,
+            "losses": 432,
+            "correct": 15911,
+            "accuracy_pct": 44.19722222222222
+          },
+          "horizontal": {
+            "eligible": 10853,
+            "second_acc_complete_pct": 44.0511774729726,
+            "attainable_rescues": 1437,
+            "first_only_successes": 839,
+            "direct_gain_pp": 1.6611111111111112,
+            "random_expected_pct": 44.12903125,
+            "rescues": 1098,
+            "losses": 454,
+            "correct": 16037,
+            "accuracy_pct": 44.547222222222224
+          },
+          "square": {
+            "eligible": 10837,
+            "second_acc_complete_pct": 46.15685835757441,
+            "attainable_rescues": 1646,
+            "first_only_successes": 818,
+            "direct_gain_pp": 2.3,
+            "random_expected_pct": 44.41764351851852,
+            "rescues": 1410,
+            "losses": 571,
+            "correct": 16232,
+            "accuracy_pct": 45.08888888888889
+          }
+        },
+        "horizontal_minus_continue": 0.3500000000000014,
+        "square_minus_continue": 0.8916666666666657
+      },
+      "quota": {
+        "requested": 10800,
+        "n": 36000,
+        "first_correct": 15393,
+        "arms": {
+          "continue": {
+            "eligible": 10507,
+            "second_acc_complete_pct": 43.50133386879321,
+            "attainable_rescues": 1458,
+            "first_only_successes": 799,
+            "direct_gain_pp": 1.8305555555555555,
+            "random_expected_pct": 43.845,
+            "rescues": 1286,
+            "losses": 589,
+            "correct": 16090,
+            "accuracy_pct": 44.69444444444444
+          },
+          "horizontal": {
+            "eligible": 10752,
+            "second_acc_complete_pct": 44.0511774729726,
+            "attainable_rescues": 1608,
+            "first_only_successes": 839,
+            "direct_gain_pp": 2.136111111111111,
+            "random_expected_pct": 44.115833333333335,
+            "rescues": 1393,
+            "losses": 573,
+            "correct": 16213,
+            "accuracy_pct": 45.03611111111111
+          },
+          "square": {
+            "eligible": 10748,
+            "second_acc_complete_pct": 46.15685835757441,
+            "attainable_rescues": 1860,
+            "first_only_successes": 804,
+            "direct_gain_pp": 2.933333333333333,
+            "random_expected_pct": 44.401666666666664,
+            "rescues": 1752,
+            "losses": 697,
+            "correct": 16448,
+            "accuracy_pct": 45.68888888888889
+          }
+        },
+        "horizontal_minus_continue": 0.34166666666666856,
+        "square_minus_continue": 0.9944444444444471
+      },
+      "complete": {
+        "requested": 10364,
+        "n": 34797,
+        "first_correct": 14871,
+        "arms": {
+          "continue": {
+            "eligible": 10364,
+            "second_acc_complete_pct": 43.51237175618588,
+            "attainable_rescues": 1431,
+            "first_only_successes": 787,
+            "direct_gain_pp": 1.8507342587004627,
+            "random_expected_pct": 43.85173383815547,
+            "rescues": 1260,
+            "losses": 582,
+            "correct": 15549,
+            "accuracy_pct": 44.6848866281576
+          },
+          "horizontal": {
+            "eligible": 10364,
+            "second_acc_complete_pct": 44.07851251544673,
+            "attainable_rescues": 1539,
+            "first_only_successes": 805,
+            "direct_gain_pp": 2.109377245164813,
+            "random_expected_pct": 44.08626165498845,
+            "rescues": 1333,
+            "losses": 553,
+            "correct": 15651,
+            "accuracy_pct": 44.97801534615053
+          },
+          "square": {
+            "eligible": 10364,
+            "second_acc_complete_pct": 46.18214213869012,
+            "attainable_rescues": 1788,
+            "first_only_successes": 780,
+            "direct_gain_pp": 2.896801448400724,
+            "random_expected_pct": 44.384985042122416,
+            "rescues": 1686,
+            "losses": 678,
+            "correct": 15879,
+            "accuracy_pct": 45.63324424519355
+          }
+        },
+        "horizontal_minus_continue": 0.2931287179929285,
+        "square_minus_continue": 0.9483576170359527
+      }
+    }
+  }
+}

@@ -100,6 +100,18 @@ Each v1.2.0 extension supplies a compressed NumPy score table and source-level d
 
 The included score tables and average-probability classes suffice for CPU policy refitting and both uncertainty analyses. The original event archives and pretrained checkpoints are distributed by the [N-ImageNet authors](https://82magnolia.github.io/n_imagenet/). Follow the [released-model regeneration instructions](regeneration/capture_windows.md) and [five-seed adaptation instructions](extensions/multiseed/RAW_REGENERATION.md) to generate logits from those upstream inputs.
 
+## Adapted continuation, DiST and fusion
+
+The source IDs in all three extensions join to `data/source_index.csv`. The adapted comparison uses 4,500 labeled policy-calibration photographs disjoint from the 4,500 sources reserved for adaptation. DiST also reports the 9,000-source policy fit. The fusion rules use the 9,000 transfer calibration pairs and retain all 1,000 classifier outputs.
+
+| Directory | Released measurements and inference inputs |
+|---|---|
+| [Adapted continuation](extensions/adapted_continuation/README.md) | Per-source chronological predictions, confidence scores and completion information for the released and five adapted states, with the resulting requests, decisions and bootstrap draws. The regeneration instructions describe how to recompute the chronological scores from the original recordings. |
+| [DiST](extensions/dist/README.md) | Per-source measurements from the original square, reference vertical and horizontal, and transfer vertical and horizontal recordings. Results cover the original-condition check, ranking, gain and chronological follow-up comparisons. The provenance record identifies the upstream classifier and input implementation. |
+| [Fusion](extensions/fusion/README.md) | Per-source test decisions, request indicators, fitted-rule results and uncertainty estimates. The [logit archive](https://github.com/pz1004/n-imagenet-capture-selection/releases/download/v1.3.0/fusion-transfer-logits.zip) contains the two transfer trajectories for both calibration and test. These arrays are sufficient to refit the product and stacking models. |
+
+The [v1.3.0 results ZIP](https://github.com/pz1004/n-imagenet-capture-selection/releases/download/v1.3.0/capture-selection-results-v1.3.0.zip) collects the three extensions’ numerical summaries. Per-source files and the replay programs accompany the tagged repository. The [N-ImageNet project](https://82magnolia.github.io/n_imagenet/) distributes the raw event recordings and pretrained classifiers.
+
 ## File integrity
 
 `data_manifest.csv` lists the relative path, size in bytes and SHA-256 digest of each released data, table and provenance file, including the extension measurements and results. On Linux, run the following in the repository root to check every digest.

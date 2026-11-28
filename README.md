@@ -4,6 +4,16 @@ When does a second physical scan improve recognition, and can the first scan ide
 
 The Mini N-ImageNet pilot used 100 classes. The confirmation used the remaining 900 classes, with 9,000 images for cutoff calibration and selector fitting and 36,000 for evaluation. With Event Histogram and up to 30,000 events per capture, confidence ranked the correct scan higher in 75.61% of vertical-only successes and 68.33% of horizontal-only successes. The equally weighted mean was 71.97%. Across all 36,000 images, selecting the more confident scan corrected 2,015 errors and lost 1,875 correct predictions relative to always using the vertical scan. Accuracy rose from 37.08% to 37.47%.
 
+## Adapted continuation, DiST and fusion in v1.3.0
+
+These three retrospective analyses use the same 36,000 evaluation photographs. The [release](https://github.com/pz1004/n-imagenet-capture-selection/releases/tag/v1.3.0) includes a [numerical summary](https://github.com/pz1004/n-imagenet-capture-selection/releases/download/v1.3.0/capture-selection-results-v1.3.0.zip) and a separate [fusion logits download](https://github.com/pz1004/n-imagenet-capture-selection/releases/download/v1.3.0/fusion-transfer-logits.zip). Each analysis directory gives the replay commands and identifies its calibration data.
+
+| Analysis | Held-out result |
+|---|---|
+| [Adapted continuation](extensions/adapted_continuation/README.md) | At a cutoff calibrated for 30% requests, switching from vertical to horizontal cost the released Histogram 1.22 percentage points relative to continuing vertically. Across five adapted states, switching gained 0.33 points (paired 95% within-class interval 0.10 to 0.54). The square follow-up had the highest mean accuracy in both classifier conditions. |
+| [DiST](extensions/dist/README.md) | The original-condition check gave 24,217 correct out of 50,000 (48.434%). On matched vertical and horizontal trajectories, the equally weighted confidence-ranking rate was 71.79%, while switching by confidence reduced accuracy by 0.51 points over vertical alone. In chronological replay, vertical continuation beat a horizontal follow-up by 1.09 points. |
+| [Product fusion and stacking](extensions/fusion/README.md) | With both scans on every source, stacking gained 368 correct predictions over the local selector, or 1.02 points (paired 95% within-class interval 0.78 to 1.30). It recovered 435 photographs both single scans had missed. At 30% requests, stacking reached 44.47% and the temperature-scaled product reached 44.43%. |
+
 ## Scan order, motion setting and continuation in v1.2.0
 
 The [v1.2.0 results download](https://github.com/pz1004/n-imagenet-capture-selection/releases/download/v1.2.0/capture-selection-results-v1.2.0.zip) collects the numerical summaries for these four comparisons. The repository also contains the source-level inputs, decisions and replay code.

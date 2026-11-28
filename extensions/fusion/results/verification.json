@@ -1,0 +1,30 @@
+{
+  "independent_point_check_sources": 36000,
+  "full_class_logit_check": 1000,
+  "archive_baseline_comparisons": [
+    "local selector",
+    "arithmetic average",
+    "request_30"
+  ],
+  "point_gradient_max": 6.78948785214073e-11,
+  "full_evaluation_brute_force_bootstrap_checks": {
+    "within": {
+      "0": 1.1574942393455245e-15,
+      "991": 4.682018661661402e-15,
+      "1999": 5.056718932472393e-16
+    },
+    "classes": {
+      "0": 2.4488510178000134e-12,
+      "991": 9.315465065995454e-16,
+      "1999": 2.220729372962027e-11
+    }
+  },
+  "verified_post_hoc_budget_sensitivity": true,
+  "intervals_recomputed_draws_per_design": 2000,
+  "bootstrap_optimality_tolerance": 1e-08,
+  "python": "3.12.3",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "protocol_sha256": "744ec133cfb1be663ea75cfe0a527b956c4e6e3be5fdc2e3e0626390b1852c2b"
+}

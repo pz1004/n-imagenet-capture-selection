@@ -1,0 +1,154 @@
+{
+  "standalone_common.horizontal-continue": [
+    -8.501267388310069,
+    -7.560840427484167
+  ],
+  "always_accept_with_fallback.horizontal-continue": [
+    -8.436180555555554,
+    -7.511041666666667
+  ],
+  "standalone_common.square-continue": [
+    2.6135526288423945,
+    3.5907460446732884
+  ],
+  "always_accept_with_fallback.square-continue": [
+    2.588819444444445,
+    3.5416666666666665
+  ],
+  "standalone_common.square-horizontal": [
+    10.660244449738398,
+    11.618565342982945
+  ],
+  "always_accept_with_fallback.square-horizontal": [
+    10.577777777777778,
+    11.530555555555555
+  ],
+  "cutoff.continue_accuracy": [
+    45.613819444444445,
+    46.62222222222222
+  ],
+  "cutoff.continue_gain": [
+    1.6694444444444445,
+    2.180625
+  ],
+  "cutoff.continue_direct_accuracy": [
+    45.37770833333334,
+    46.37243055555555
+  ],
+  "cutoff.horizontal_accuracy": [
+    44.55833333333333,
+    45.56111111111111
+  ],
+  "cutoff.horizontal_gain": [
+    0.6916666666666667,
+    1.0695138888888884
+  ],
+  "cutoff.horizontal_direct_accuracy": [
+    44.05277777777778,
+    45.019444444444446
+  ],
+  "cutoff.square_accuracy": [
+    46.955486111111114,
+    47.983333333333334
+  ],
+  "cutoff.square_gain": [
+    2.9722222222222223,
+    3.602777777777778
+  ],
+  "cutoff.square_direct_accuracy": [
+    46.86944444444445,
+    47.89451388888889
+  ],
+  "cutoff.horizontal-continue": [
+    -1.3055555555555556,
+    -0.788888888888889
+  ],
+  "cutoff.horizontal-continue_common": [
+    -1.377071945658714,
+    -0.8448700741894821
+  ],
+  "cutoff.square-continue": [
+    1.075,
+    1.6278472222222216
+  ],
+  "cutoff.square-continue_common": [
+    1.055567579715558,
+    1.615097885675544
+  ],
+  "cutoff.square-horizontal": [
+    2.1,
+    2.7084027777777777
+  ],
+  "cutoff.square-horizontal_common": [
+    2.150332079822682,
+    2.763493420741384
+  ],
+  "quota.continue_accuracy": [
+    45.558263888888895,
+    46.57222222222222
+  ],
+  "quota.continue_gain": [
+    1.6499305555555557,
+    2.1055555555555556
+  ],
+  "quota.continue_direct_accuracy": [
+    45.338680555555555,
+    46.35006944444444
+  ],
+  "quota.horizontal_accuracy": [
+    44.54430555555555,
+    45.55840277777778
+  ],
+  "quota.horizontal_gain": [
+    0.6861111111111111,
+    1.0444444444444443
+  ],
+  "quota.horizontal_direct_accuracy": [
+    44.03611111111111,
+    45.03618055555555
+  ],
+  "quota.square_accuracy": [
+    46.85541666666666,
+    47.89451388888889
+  ],
+  "quota.square_gain": [
+    2.933263888888889,
+    3.4611111111111112
+  ],
+  "quota.square_direct_accuracy": [
+    46.78333333333333,
+    47.81118055555555
+  ],
+  "quota.horizontal-continue": [
+    -1.2500694444444445,
+    -0.7638888888888888
+  ],
+  "quota.horizontal-continue_common": [
+    -1.322146821956324,
+    -0.8201386143365569
+  ],
+  "quota.square-continue": [
+    1.0527777777777778,
+    1.5834027777777775
+  ],
+  "quota.square-continue_common": [
+    1.0310388546680376,
+    1.5662360958224646
+  ],
+  "quota.square-horizontal": [
+    2.0527083333333334,
+    2.591805555555555
+  ],
+  "quota.square-horizontal_common": [
+    2.092507509542213,
+    2.6473223524649536
+  ],
+  "first_accuracy": [
+    43.69437500000001,
+    44.67784722222222
+  ],
+  "requested_pct": [
+    29.43034722222222,
+    32.1
+  ]
+}

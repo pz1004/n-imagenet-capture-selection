@@ -1,0 +1,22 @@
+{
+  "v_only_rank": 75.17797816801139,
+  "h_only_rank": 68.41161706704912,
+  "balanced_rank": 71.79479761753026,
+  "first_pct": 41.24444444444445,
+  "horizontal_pct": 25.580555555555556,
+  "raw_accuracy_pct": 40.733333333333334,
+  "gain_pp": -0.5111111111111111,
+  "d_pct": 31.15833333333333,
+  "first_share_pct": 75.13595435499688,
+  "pooled_selector_pct": 73.49558705536239,
+  "only_vertical_n": 8428,
+  "only_horizontal_n": 2789,
+  "vertical_wins": 6336,
+  "horizontal_wins": 1908,
+  "vertical_ties": 0,
+  "horizontal_ties": 0,
+  "both_correct": 6420,
+  "both_wrong": 18363,
+  "rescues": 1908,
+  "losses": 2092
+}

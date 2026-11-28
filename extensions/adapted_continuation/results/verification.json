@@ -1,0 +1,25 @@
+{
+  "verified_utc": "2026-11-28T06:58:40.951677+00:00",
+  "states": 6,
+  "policy_sources": 4500,
+  "test_sources": 36000,
+  "new_1000_class_logit_vectors": 810000,
+  "all_scores_classes_gates_terminal_decisions_verified": true,
+  "independent_optimizer": "SciPy BFGS",
+  "independent_refit_draws_per_design": [
+    0,
+    250,
+    1975
+  ],
+  "draws_per_design": 2000,
+  "paired_seed_mean_and_interaction_percentiles_verified": true,
+  "protocol_sha256": "877b9c77d0b8968e637df46bf6738962102a61d7fd0ff711c1e1f81e72893379",
+  "files": {
+    "bootstrap_within.npy": "4256bf2bc01e5f62e045662df009c25fc5f5b68ae5aa57704b3fb80e9eb47ce7",
+    "paired.json": "6fc7ea0a3e7f61e0fbefc10bd6d6d655c7ca376adba1433eaa86c2f4c4e8f219",
+    "decisions.csv.gz": "20c710ada1ec8da213878da36cfafc1f7a600c1f3816686598126a5a45010ded",
+    "bootstrap_class.npy": "4073f187006890c72662df3c6919546f7e5579480356a1baf88178c2229449c3",
+    "hash_order_breakdown.csv": "0193e4dcad71cd232059d4d62aa839dc3a1fa469999f98bb718f257871191f11",
+    "by_seed.json": "5cb627d0eafe80bbdd45347ae3c5ff72e2e1146a03eae539d3d4dd3641556db4"
+  }
+}

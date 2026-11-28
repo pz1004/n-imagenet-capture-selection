@@ -1,0 +1,82 @@
+{
+  "variant1": {
+    "started": "2026-11-28T06:42:16.179199+00:00",
+    "completed": "2026-11-28T06:48:54.936460+00:00",
+    "archive_sha256": "84e5683d1b39ae2ef05045461f1e495e4b6ae768c9207e763ecb211608c1061f",
+    "frozen_states": {
+      "1": "a3b28f302aecb3ca1cee0d903b834f68dd031d767a1926bbcc33fdeeaf66a366",
+      "2": "fe7f5f0940a69cd5eb271cdb9a2e35aa85cc04afba0ff6441a20e0e311b52fc0",
+      "3": "83f5c9be6803621c660bc174f2d12f8268e9a3be5749ec2c0a628a4532f118ec",
+      "4": "2ea8899f1cae2963cf10d6a78c62755bcdcfcec5f1f812a4070aa6c27c516985",
+      "5": "755e1f489958f6b082c468d6c3951c3b1cd643fc810c2e8d99eed8cbfaad67e7"
+    },
+    "calibration_parity_n": 32,
+    "rows": 40500,
+    "pytorch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "batch": 32,
+    "logits_sha256": {
+      "first_seed4.npy": "12f13ddd4adec876fd665526d1161011ab6b40e99e1e4f0fd5a1e518be63b4d5",
+      "first_seed3.npy": "3d90310666df9d07b6389c2966598ceb3c22f652d0849ae1f71c6f90841b55ca",
+      "first_seed1.npy": "dd747346d0f1ba00e9d34a5fb3a74f43ba8d7270001471d2d377ff03431fd2f4",
+      "second_seed1.npy": "c4fcdd6bd20c373f929c375afebdbeb771b89e0decfb3197a02cd12e0c22588b",
+      "second_seed4.npy": "6ad976a29942884e2d6a45dbfd21b457c14d50f3724adacbcc0fe6bf2e0699a4",
+      "first_seed2.npy": "0023dd836b712ec3e9c9ec2c946da6a170a5967faae784894c4429ed64d2745d",
+      "second_seed3.npy": "dcac6dfd051bbb569f8ac6e5b635e7fdeb769862111223e345c1b82e7e6196cd",
+      "first_seed5.npy": "e2aa9b371ef7b0be5fb10b58e3b5a5c9eff0c9e07b978a5781c2fc4ea56d8258",
+      "second_seed5.npy": "22f514a3af7fc49c09248c79cd8befc2f83d05f59eaf5aef6437ccadb86456c5",
+      "second_seed2.npy": "f96881a54dfc94cde8d971c3678b5f7f98ab36c9c8d355f650379118e20fd3eb"
+    }
+  },
+  "variant2": {
+    "started": "2026-11-28T06:48:56.083731+00:00",
+    "completed": "2026-11-28T06:54:10.428060+00:00",
+    "archive_sha256": "fdfb98be5c8265e013fa8356df213fb8bfc7b8e57279ca3864894207ce453365",
+    "frozen_states": {
+      "1": "6546a00deacd5207329ff3d48363e7d45b5dda1563085babbf478819228efc34",
+      "2": "fb53f4a501f6732e55edc74b52c2128b7b034974b30e7c500d0c7257d0aba13b",
+      "3": "439786366edbf9882aec7278d5013c28b89d7ff1a25680aabc88ff92ff5d337a",
+      "4": "b84d967b16bc16e24fe540bbabaa098d95e28a4fd323148063183023d0cfa95c",
+      "5": "2e6de5b38ddd8f53e75bf4d6b19d50072a2c5a53b071cfa2da047d03dfd2f3bf"
+    },
+    "calibration_parity_n": 32,
+    "rows": 40500,
+    "pytorch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "batch": 32,
+    "logits_sha256": {
+      "first_seed4.npy": "47a9dee49261e519d5722a480e268a50d4bc7ddfd51b393a655863dc20f67d2a",
+      "first_seed3.npy": "eabbfd84b709d911c2975e9c11ce7795a4220ce52f38bd2eecf7c0a05930387f",
+      "first_seed1.npy": "1879ee4495771465407db8ef2849d304f19fae6e6e5ae5c067ecb481454e6847",
+      "first_seed2.npy": "109c6e59a4e19304878372d071bec1ce44905dfa7d91ce2f4a385ce00d2a88ad",
+      "first_seed5.npy": "73f9fda1b222459f043e35a9db1c9d0222dd5f0c33a7ba050c375abf23c7441c"
+    }
+  },
+  "original": {
+    "started": "2026-11-28T06:54:10.889286+00:00",
+    "completed": "2026-11-28T06:58:14.007379+00:00",
+    "archive_sha256": "d4c1534c75572a7fec0c56e34463d20b787fb747152fb99982ba9778ead45e50",
+    "frozen_states": {
+      "1": "5570a999d4405c3e99bf26673bf2c88d1d9a9c712a491aabb83356ad587f7e2a",
+      "2": "8c655e9324cffe6bd09842ed8cd14a0c5414768adfb8aa711447fbdddc1a1bc7",
+      "3": "65af33bcab4d294ada36717c3aa37bb5004344da1093b9d99596f121eaaf2e01",
+      "4": "a2ca96344e871acd3690eac9ba4c939a215eb65ac546adfe43a7baa790496c55",
+      "5": "ecd6e17a5d507bcb1da79da9edd96b015d09566a369da4bf07791a2681c55b95"
+    },
+    "calibration_parity_n": 32,
+    "rows": 40500,
+    "pytorch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "batch": 32,
+    "logits_sha256": {
+      "first_seed4.npy": "280ef0b96870251b1c08675613e5e01a4552908d244480952540b68e8d1b6608",
+      "first_seed3.npy": "da47eab56c93d9322298c780999faf7d8d73faa51ce8ef43267cc3b927a8a9ec",
+      "first_seed1.npy": "12d951c352bd249239f8bd5678d5cca771c7f39d06ef62b1512f69caa87c2ccf",
+      "first_seed2.npy": "e7f2488c1da6b6aeae61b6110b02c6b4dc3739d742297257927c88cd83c830a2",
+      "first_seed5.npy": "56511641030cf9f148ccc2c7c79dec3f614a36d2914a74074bbed1090bc27029"
+    }
+  }
+}

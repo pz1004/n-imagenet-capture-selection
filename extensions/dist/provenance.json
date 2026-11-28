@@ -1,0 +1,327 @@
+{
+  "upstream_code_revision": "6815335a35b5bdf65623b3e6b1acbe3fe74b2e33",
+  "checkpoint_sha256": "d02ae5621e9a5b03ecce6e4cfef877e745e1edf8a57c541879a059b83fa5c41d",
+  "configuration_sha256": "41dc16c1ab1309e44357aaef2b35385c43b1d895b9a814b9f8baa0ff1a288c48",
+  "class_map_sha256": "8e51451f7d596d33b4a6d06de7c91a2493efff1b6feb75d4f745a0c7499dd346",
+  "source_index_sha256": "f22c7aecb76f22fefdf2f24086a5700ff2a2b5a879acc4976f66b01551ad0cbd",
+  "checkpoint_folder": "https://drive.google.com/drive/folders/14mdWMeqYSvBGrvYvsydKbGJURuMzn2SW",
+  "archives": {
+    "original": {
+      "sha256": "d4c1534c75572a7fec0c56e34463d20b787fb747152fb99982ba9778ead45e50",
+      "bytes": 17708135817,
+      "filename": "extracted_val.zip"
+    },
+    "vertical": {
+      "sha256": "329e56d14bc43667705b6a36177ef0bb1c0a9c4d4af18d81b1f075c858947f11",
+      "bytes": 19363326293,
+      "filename": "extracted_val_mode_6.zip"
+    },
+    "horizontal": {
+      "sha256": "14ec6980bcc9f5592389448fd10e63690e93fa04a52b8ac59107f1737b3053ff",
+      "bytes": 18174636440,
+      "filename": "extracted_val_mode_7.zip"
+    },
+    "variant1": {
+      "sha256": "84e5683d1b39ae2ef05045461f1e495e4b6ae768c9207e763ecb211608c1061f",
+      "bytes": 17694012309,
+      "filename": "extracted_val_mode_1.zip"
+    },
+    "variant2": {
+      "sha256": "fdfb98be5c8265e013fa8356df213fb8bfc7b8e57279ca3864894207ce453365",
+      "bytes": 17904278142,
+      "filename": "extracted_val_mode_5.zip"
+    }
+  },
+  "inference": {
+    "original": {
+      "sha256": {
+        "first.npy": "e4d44769725276873b8c6e91510e9ac7abc1f33a6082ce55d73265f699d1a00a",
+        "hash.npy": "a67ef54f01473dfefbf0a30a6c3fb65ffe21dde2e1d434a47faf8d6477181495",
+        "parity.json": "04511d62ceabe152b6251563797c4711c7627cda28e0df243a1a2ec8449a4448",
+        "sources.csv": "e6b0d0afb4c8a080df2452be9271e73bbd6b1220d5bccff95303b5f1539b9fa2"
+      },
+      "condition": "original",
+      "n": 50000,
+      "started": "2026-11-28T06:44:06.856864+00:00",
+      "finished": "2026-11-28T06:48:23.694514+00:00",
+      "torch": "2.11.0+cu128",
+      "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+      "batch": 32,
+      "workers": 8,
+      "raw_archive_sha256": "d4c1534c75572a7fec0c56e34463d20b787fb747152fb99982ba9778ead45e50",
+      "gate": {
+        "correct": 24217,
+        "n": 50000,
+        "measured_pct": 48.434,
+        "published_pct": 48.43,
+        "tolerance_pp": 1,
+        "pass": true
+      }
+    },
+    "vertical": {
+      "sha256": {
+        "hash.npy": "531a6f924347b7f8e81aa8b0bd4ac3ea53fec846f9ab254324cc1433818f56c6",
+        "parity.json": "005993160b726f25a95ddfe72006fdab4b230a9ffcd513555e8dd0bdbeb5d126",
+        "sources.csv": "2b43a3423cca42012c6cfa2b66c9e77a91f43627ca525e9234a188a2570fad33"
+      },
+      "condition": "vertical",
+      "n": 45000,
+      "started": "2026-11-28T06:48:23.742229+00:00",
+      "finished": "2026-11-28T06:50:47.093405+00:00",
+      "torch": "2.11.0+cu128",
+      "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+      "batch": 32,
+      "workers": 8,
+      "raw_archive_sha256": "329e56d14bc43667705b6a36177ef0bb1c0a9c4d4af18d81b1f075c858947f11"
+    },
+    "horizontal": {
+      "sha256": {
+        "hash.npy": "dabf79bd9cb520487e97e50f8ae06c0849e9c9e27cb4408b938873b0298861aa",
+        "parity.json": "f5e64ab77d451d2f56dcd0a80b9abc65ffe0dba616211c6a890490817bc974e4",
+        "sources.csv": "2e510b058dee6375abe9aad1bc29f4e43fbd226302097faa1c69ec384eaa34f6"
+      },
+      "condition": "horizontal",
+      "n": 45000,
+      "started": "2026-11-28T06:50:47.140352+00:00",
+      "finished": "2026-11-28T06:52:52.674533+00:00",
+      "torch": "2.11.0+cu128",
+      "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+      "batch": 32,
+      "workers": 8,
+      "raw_archive_sha256": "14ec6980bcc9f5592389448fd10e63690e93fa04a52b8ac59107f1737b3053ff"
+    },
+    "variant1": {
+      "sha256": {
+        "second.npy": "9b1e70eb0b5e9bfae05a53da11d59be6292c024716a5f6305d42fee2f10f248c",
+        "first.npy": "ca15785d592b999cb2b5890aec54ae01a45a6bc9c448a1b74aa07de62abb3860",
+        "parity.json": "18e5e62d87be625ef0aa3470ed4e29d2c8bbe347a8adb6d71cb026673c6af56f",
+        "sources.csv": "64fe78e1023538834098ed27b8f1e206c18aa186daeb4ccbc12df2940d7447fa"
+      },
+      "condition": "variant1",
+      "n": 45000,
+      "started": "2026-11-28T06:52:52.724744+00:00",
+      "finished": "2026-11-28T06:55:11.417232+00:00",
+      "torch": "2.11.0+cu128",
+      "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+      "batch": 32,
+      "workers": 8,
+      "raw_archive_sha256": "84e5683d1b39ae2ef05045461f1e495e4b6ae768c9207e763ecb211608c1061f"
+    },
+    "variant2": {
+      "sha256": {
+        "first.npy": "614ca4cd68059f290aad28918dfd1a632d0f2f444b626a4110334b0d4dc37242",
+        "parity.json": "e03139c1159f3596d2655847370d630fceab8aa40da640c07c15f0b7f28f7a72",
+        "sources.csv": "4c317fbf341cf2dda6081425555510f99e0f22c7e1c68cf0ea4943b4a337ddf3"
+      },
+      "condition": "variant2",
+      "n": 45000,
+      "started": "2026-11-28T06:49:12.439533+00:00",
+      "finished": "2026-11-28T06:51:33.105543+00:00",
+      "torch": "2.11.0+cu128",
+      "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+      "batch": 32,
+      "workers": 4,
+      "raw_archive_sha256": "fdfb98be5c8265e013fa8356df213fb8bfc7b8e57279ca3864894207ce453365"
+    }
+  },
+  "calibration_parity": {
+    "original": [
+      {
+        "source_id": "n04204238/ILSVRC2012_val_00013624",
+        "crop": "hash",
+        "label": 790,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.0037851333618164062
+      },
+      {
+        "source_id": "n04204238/ILSVRC2012_val_00013624",
+        "crop": "first",
+        "label": 790,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.0038385391235351562
+      },
+      {
+        "source_id": "n02123045/ILSVRC2012_val_00025650",
+        "crop": "hash",
+        "label": 281,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.0072841644287109375
+      },
+      {
+        "source_id": "n02123045/ILSVRC2012_val_00025650",
+        "crop": "first",
+        "label": 281,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.008181095123291016
+      },
+      {
+        "source_id": "n03345487/ILSVRC2012_val_00048156",
+        "crop": "hash",
+        "label": 555,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.010059833526611328
+      },
+      {
+        "source_id": "n03345487/ILSVRC2012_val_00048156",
+        "crop": "first",
+        "label": 555,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.005962371826171875
+      }
+    ],
+    "vertical": [
+      {
+        "source_id": "n04204238/ILSVRC2012_val_00013624",
+        "crop": "hash",
+        "label": 790,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.0074672698974609375
+      },
+      {
+        "source_id": "n02123045/ILSVRC2012_val_00025650",
+        "crop": "hash",
+        "label": 281,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.006592750549316406
+      },
+      {
+        "source_id": "n03345487/ILSVRC2012_val_00048156",
+        "crop": "hash",
+        "label": 555,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.009593725204467773
+      }
+    ],
+    "horizontal": [
+      {
+        "source_id": "n04204238/ILSVRC2012_val_00013624",
+        "crop": "hash",
+        "label": 790,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.004710197448730469
+      },
+      {
+        "source_id": "n02123045/ILSVRC2012_val_00025650",
+        "crop": "hash",
+        "label": 281,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.007443666458129883
+      },
+      {
+        "source_id": "n03345487/ILSVRC2012_val_00048156",
+        "crop": "hash",
+        "label": 555,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.005424141883850098
+      }
+    ],
+    "variant1": [
+      {
+        "source_id": "n04204238/ILSVRC2012_val_00013624",
+        "crop": "first",
+        "label": 790,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.0060350894927978516
+      },
+      {
+        "source_id": "n04204238/ILSVRC2012_val_00013624",
+        "crop": "second",
+        "label": 790,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.004995822906494141
+      },
+      {
+        "source_id": "n02123045/ILSVRC2012_val_00025650",
+        "crop": "first",
+        "label": 281,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.006988525390625
+      },
+      {
+        "source_id": "n02123045/ILSVRC2012_val_00025650",
+        "crop": "second",
+        "label": 281,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.0102081298828125
+      },
+      {
+        "source_id": "n03345487/ILSVRC2012_val_00048156",
+        "crop": "first",
+        "label": 555,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.008503913879394531
+      },
+      {
+        "source_id": "n03345487/ILSVRC2012_val_00048156",
+        "crop": "second",
+        "label": 555,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.008250713348388672
+      }
+    ],
+    "variant2": [
+      {
+        "source_id": "n04204238/ILSVRC2012_val_00013624",
+        "crop": "first",
+        "label": 790,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.00363922119140625
+      },
+      {
+        "source_id": "n02123045/ILSVRC2012_val_00025650",
+        "crop": "first",
+        "label": 281,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.00675201416015625
+      },
+      {
+        "source_id": "n03345487/ILSVRC2012_val_00048156",
+        "crop": "first",
+        "label": 555,
+        "input_max_abs": 0.0,
+        "cpu_logit_max_abs": 0.0,
+        "gpu_logit_max_abs": 0.007373809814453125
+      }
+    ]
+  },
+  "replication_checks": {
+    "original_correct": 24217,
+    "n_test": 36000,
+    "n_calibration": 9000,
+    "source_metadata_checks": "all five full source/label joins and reference crop endpoints; chronological first/second spans match archived inputs",
+    "reference_counts": {
+      "rescues": 1908,
+      "losses": 2092,
+      "only_vertical_n": 8428,
+      "vertical_wins": 6336,
+      "vertical_ties": 0,
+      "only_horizontal_n": 2789,
+      "horizontal_wins": 1908,
+      "horizontal_ties": 0
+    },
+    "terminal_refits": "Independent SciPy BFGS fitted on 4,500 and 9,000 sources with full agreement on 216,000 source-by-arm terminal decisions",
+    "original_square_heldout_hash_pct": 48.06111111111111,
+    "dependency_versions": "3.12.3 2.5.4 2.11.0+cu128 0.26.0+cu128",
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  }
+}
